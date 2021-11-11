@@ -1,0 +1,15 @@
+.hero {
+  background-color: $heroBg;
+
+  &__tittle {
+    font-family: $tittleFont;
+    @include font(38px, (44/38));
+    color: $whiteColor;
+    text-transform: uppercase;
+
+    &--red {
+      color: $accentColor;
+      @include font(58px, 0.905);
+    }
+  }
+}
