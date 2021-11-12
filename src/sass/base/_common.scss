@@ -3,3 +3,26 @@ body {
   color: $primaryTextColor;
   font-family: $mainFont;
 }
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  min-width: 320px;
+
+  @media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 34px;
+    padding-right: 34px;
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 115px;
+    padding-right: 115px;
+    width: $desktop;
+  }
+}
