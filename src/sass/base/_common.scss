@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   min-width: 320px;
 
-  @media screen and (max-width: ($tablet - 1px)) {
+  @media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
     width: $mobile;
   }
 
