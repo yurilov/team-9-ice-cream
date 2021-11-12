@@ -1,0 +1,63 @@
+.product {
+  background-color: $whiteColor;
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  &__title {
+    font-family: $tittleFont;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $preTittleColor;
+  }
+
+  &__heading {
+    margin-top: 15px;
+
+    font-family: $tittleFont;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accentColor;
+  }
+}
+
+.product-card {
+  border-radius: 24px;
+
+  &__heading {
+    font-family: $tittleFont;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $whiteColor;
+  }
+
+  //   &__heading::after {
+  //     content: '';
+  //     width: 10px;
+  //     height: 10px;
+  //     outline: 1px solid black;
+  //   }
+}
+
+.product-card:not(:last-child) {
+  margin-bottom: 113px;
+}
+
+.product-card--cream {
+  background-color: $heroBg;
+}
+
+.product-card--coffee {
+  background-color: $iceCoffeBg;
+}
+
+.product-card--milkshakes {
+  background-color: $milkshakesBg;
+}
