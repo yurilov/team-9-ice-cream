@@ -1,0 +1,24 @@
+.advantages {
+  background-color: $secondaryBg;
+  &-container {
+    padding: 0 70px 97px 20px;
+  }
+}
+
+.advantages-list {
+  &__item:not(:last-child) {
+    margin-bottom: 34px;
+  }
+  &__item-number {
+    font-family: $tittleFont;
+    @include font(36px, (41.22/36), 400);
+    color: $accentColor;
+    display: block;
+    margin-bottom: 18px;
+  }
+  &__item-info {
+    font-family: $mainFont;
+    @include font(12px, (20.4/12), 700);
+    color: $blackColor;
+  }
+}
