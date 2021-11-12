@@ -38,16 +38,22 @@
     color: $whiteColor;
   }
 
-  //   &__heading::after {
-  //     content: '';
-  //     width: 10px;
-  //     height: 10px;
-  //     outline: 1px solid black;
-  //   }
+  &__heading::after {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 6px;
+    outline: 1px solid black;
+  }
 }
 
 .product-card:not(:last-child) {
   margin-bottom: 113px;
+}
+
+.product-card__text {
+  width: 200px;
+  text-align: center;
 }
 
 .product-card--cream {
