@@ -113,7 +113,11 @@
     content: '';
     width: 26px;
     height: 6px;
-    outline: 1px solid black;
+    background-image: url(../images/dots.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/dots@2x.png);
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -156,14 +160,14 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
 
-  &--icon {
-    display: block;
-    margin: auto;
-    width: 15px;
-    height: 15px;
-    fill: $accentColor;
-  }
+.btn__icon {
+  display: block;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  fill: $accentColor;
 }
 
 .product-card--cream {
