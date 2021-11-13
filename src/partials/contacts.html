@@ -2,17 +2,17 @@
     <div class="container">
         <h2 class="visually-hidden">representations</h2>
         <ul class="contacts__list list">
-            <li class="contacts__card-compani">
-                <p class="contacts__compani contacts__compani--brown">CAFE</p>
-                <p class="contacts__city-compani">Chicago</p>
-                <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                <ul class="contacts__payment-time-list list">
-                    <li class="contacts__payment-time">
-                        <p class="payment-day">Monday - Friday</p>
+            <li class="contacts-card">
+                <p class="contacts-card__dealerships contacts-card__dealerships--brown">CAFE</p>
+                <p class="contacts-card__city">Chicago</p>
+                <p class="contacts-card__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <ul class="contacts-schedule list">
+                    <li class="contacts-schedule__item">
+                        <p class="contacts-schedule__text">Monday - Friday</p>
                         <time class="time">06:00 AM - 10:00 PM</time> 
                     </li>
-                    <li class="contacts__payment-time">
-                        <p class="payment-day">Saturday - Sunday</p>
+                    <li class="contacts-schedule__item">
+                        <p class="contacts-schedule__text">Saturday - Sunday</p>
                         <time class="time">08:00 AM - 16:00 PM</time>
                     </li>
                 </ul>
@@ -26,17 +26,17 @@
                     </li>
                 </ul>
             </li>
-            <li class="contacts__card-compani">
-                <p class="contacts__compani contacts__compani--green">FOOD TRUCK</p>
-                <p class="contacts__city-compani">Los Angeles</p>
-                <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                <ul class="contacts__payment-time-list list">
-                    <li class="contacts__payment-time">
-                        <p class="payment-day">Monday - Friday</p>
+            <li class="contacts-card">
+                <p class="contacts-card__dealerships contacts-card__dealerships--green">FOOD TRUCK</p>
+                <p class="contacts-card__city">Los Angeles</p>
+                <p class="contacts-card__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <ul class="contacts-schedule list">
+                    <li class="contacts-schedule__item">
+                        <p class="contacts-schedule__text">Monday - Friday</p>
                         <time class="time">06:00 AM - 10:00 PM</time>
                     </li>
-                    <li>
-                        <p class="payment-day">Saturday - Sunday</p>
+                    <li class="contacts-schedule__item">
+                        <p class="contacts-schedule__text">Saturday - Sunday</p>
                         <time class="time">08:00 AM - 16:00 PM</time>
                     </li>
                 </ul>
@@ -50,17 +50,17 @@
                     </li>
                 </ul>
             </li>
-            <li class="contacts__card-compani">
-                <p class="contacts__compani contacts__compani--brown">CAFE</p>
-                <p class="contacts__city-compani">New York</p>
-                <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                <ul class="contacts__payment-time-list list">
-                    <li class="contacts__payment-time">
-                        <p class="payment-day">Monday - Friday</p>
+            <li class="contacts-card">
+                <p class="contacts-card__dealerships contacts-card__dealerships--brown">CAFE</p>
+                <p class="contacts-card__city">New York</p>
+                <p class="contacts-card__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <ul class="contacts-schedule list">
+                    <li class="contacts-schedule__item">
+                        <p class="contacts-schedule__text">Monday - Friday</p>
                         <time class="time">06:00 AM - 10:00 PM</time>
                     </li>
-                    <li>
-                        <p class="payment-day">Saturday - Sunday</p>
+                    <li class="contacts-schedule__item">
+                        <p class="contacts-schedule__text">Saturday - Sunday</p>
                         <time class="time">08:00 AM - 16:00 PM</time>
                     </li>
                 </ul>
@@ -75,17 +75,22 @@
                 </ul>
             </li>
         </ul>
-        <div class="container-buttons">
-            <button class="contacts__button contacts__button--pink" type="button">Our Locations
-                <svg class="button__icon" width="4.43" height="8" preserveAspectRatio="xMidYMid meet">
-                    <use href=""></use>
-                </svg>
-            </button>
-            <button class="contacts__button contacts__button--white" type="button">Franchise
-                <svg class="button__icon" width="4.43" height="8" preserveAspectRatio="xMidYMid meet">
-                    <use href=""></use>
-                </svg>
-            </button>
-        </div>
+        <ul class="contacts__buttons list">
+            <li>
+                <button class="contacts__button contacts__button--pink" type="button">Our Locations
+                    <svg class="contacts__icon contacts__icon--white" width="4.43" height="8" preserveAspectRatio="xMidYMid meet">
+                        <use href=""></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="contacts__button contacts__button--white" type="button">Franchise
+                    <svg class="contacts__icon contacts__icon--pink" width="4.43" height="8" preserveAspectRatio="xMidYMid meet">
+                        <use href=""></use>
+                    </svg>
+                </button>
+            </li>
+            
+        </ul>
     </div>
 </section>

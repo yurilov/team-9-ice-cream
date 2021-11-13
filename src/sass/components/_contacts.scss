@@ -10,7 +10,7 @@
 //   align-items: center;
 // }
 
-.contacts__card-compani {
+.contacts-card {
   min-width: 220px;
   padding: 43px 20px;
   background: $whiteColor;
@@ -21,7 +21,7 @@
   }
 }
 
-.contacts__compani {
+.contacts-card__dealerships {
   height: line-height;
   margin-bottom: 25px;
   @include font(12px, 1.86, 500, 0.04);
@@ -30,29 +30,29 @@
   border-radius: 4px;
 }
 
-.contacts__compani--brown {
+.contacts-card__dealerships--brown {
   padding: 0 24px;
   background: $iceCoffeBg;
 }
 
-.contacts__compani--green {
+.contacts-card__dealerships--green {
   padding: 0 30px;
   background: $milkshakesBg;
 }
 
-.contacts__city-compani {
+.contacts-card__city {
   margin-bottom: 10px;
   @include font(12px, 1.86, 500, 0.04);
   color: $blackColor;
 }
 
-.contacts__text {
+.contacts-card__text {
   margin-bottom: 25px;
   @include font(12px, 1.5, 500, 0);
   color: $primaryTextColor;
 }
 
-.contacts__payment-time-list {
+.contacts-schedule {
   padding-top: 25px;
   padding-bottom: 25px;
   border-top: 1px solid $footerBorderColor;
@@ -62,7 +62,7 @@
   }
 }
 
-.payment-day {
+.contacts-schedule__text {
   @include font(12px, 1.86, 500);
   color: $blackColor;
 }
@@ -85,7 +85,7 @@
   }
 }
 
-.container-buttons {
+.contacts__buttons {
   margin-top: 54px;
   display: flex;
   flex-direction: column;
@@ -122,4 +122,12 @@
   &:focus {
     background-color: $btnLightHover;
   }
+}
+
+.contacts__icon--white {
+  fiil: $whiteColor;
+}
+
+.contacts__icon--pink {
+  fiil: $accentColor;
 }
