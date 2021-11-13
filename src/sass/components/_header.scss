@@ -1,4 +1,35 @@
-.header-nav_list{
-    display: flex;
-    color: ;
+.header-conteiner{
+    background-color: transparent;
+/*     position: absolute; */
+    width: 100%;
+    padding-top: 6px;
+    padding-left: 20px;
+}
+
+.header-logo{
+    width: 199px;
+    height: 50px;
+
+}
+
+.open-btn{
+    position: absolute;
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+    top: 25px;
+    right: 20px;
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+}
+.open-modal_icon{
+    width: 20px;
+    height: 12px;
+    fill: var($accentColor);
+
 }
