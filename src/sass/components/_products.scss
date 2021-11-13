@@ -38,16 +38,32 @@
     color: $whiteColor;
   }
 
-  //   &__heading::after {
-  //     content: '';
-  //     width: 10px;
-  //     height: 10px;
-  //     outline: 1px solid black;
-  //   }
+  &__heading::after {
+    display: block;
+    margin: 30px auto;
+    content: '';
+    width: 26px;
+    height: 6px;
+    outline: 1px solid black;
+  }
 }
 
-.product-card:not(:last-child) {
-  margin-bottom: 113px;
+.product-card {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 113px;
+    }
+  }
+}
+
+.product-card__text {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    width: 241px;
+  }
 }
 
 .product-card--cream {
