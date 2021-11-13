@@ -4,16 +4,29 @@
   padding-bottom: 98px;
 
   &__title {
+    margin-bottom: 15px;
+
     font-family: $tittleFont;
     font-size: 18px;
     line-height: 1.17;
     text-align: center;
     text-transform: uppercase;
     color: $preTittleColor;
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+    }
   }
 
   &__heading {
-    margin-top: 15px;
+    margin-bottom: 144px;
 
     font-family: $tittleFont;
     font-size: 34px;
@@ -22,11 +35,42 @@
     text-align: center;
     text-transform: uppercase;
     color: $accentColor;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 150px;
+      font-size: 48px;
+      line-height: 1.14;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 259px;
+      font-size: 58px;
+    }
   }
 }
 
 .product-card {
+  position: relative;
+
+  padding-top: 160px;
+  padding-bottom: 41px;
   border-radius: 24px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 130px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 152px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 163px;
+    padding-bottom: 50px;
+  }
 
   &__heading {
     font-family: $tittleFont;
@@ -46,24 +90,46 @@
     height: 6px;
     outline: 1px solid black;
   }
-}
 
-.product-card {
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 113px;
-    }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
   }
 }
 
 .product-card__text {
   width: 200px;
   margin: 0 auto;
+  margin-bottom: 30px;
   text-align: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: $whiteColor;
+
+  @media screen and (min-width: 768px) {
+    width: 198px;
+    margin-bottom: 40px;
+    line-height: 1.78;
+  }
 
   @media screen and (min-width: 1280px) {
     width: 241px;
+    margin-bottom: 62px;
+    font-size: 16px;
+    line-height: 1.75;
   }
+}
+
+.product-card__btn {
+  display: block;
+  border: none;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .product-card--cream {
@@ -76,4 +142,10 @@
 
 .product-card--milkshakes {
   background-color: $milkshakesBg;
+}
+
+.product-picture__icecream {
+  position: absolute;
+  top: -113px;
+  left: 16px;
 }
