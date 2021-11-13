@@ -1,0 +1,121 @@
+.contacts {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__card-compani {
+  width: 220px;
+  padding: 43px 21px 43px 20px;
+  background: $whiteColor;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__compani {
+  height: 16px;
+  margin-bottom: 25px;
+  @include font(12px, 1.86, 500, 0.04);
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // text-align: center;
+
+  color: $whiteColor;
+  border-radius: 4px;
+}
+
+.contacts__compani--brown {
+  background: $iceCoffeBg;
+  width: 80px;
+}
+
+.contacts__compani--green {
+  background: $milkshakesBg;
+  width: 130px;
+}
+
+.contacts__city-compani {
+  margin-bottom: 10px;
+  @include font(12px, 1.86, 500, 0.04);
+  color: $blackColor;
+}
+
+.contacts__text {
+  margin-bottom: 25px;
+  @include font(12px, 1.5, 500);
+  color: $primaryTextColor;
+}
+
+.contacts__payment-time-list {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid $footerBorderColor;
+  border-bottom: 1px solid $footerBorderColor;
+  &:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
+
+.payment-day {
+  @include font(12px, 1.86, 500);
+  color: $blackColor;
+}
+
+.time {
+  @include font(12px, 1.86, 500);
+  color: $preTittleColor;
+}
+
+.contacts_list-contacts {
+  margin-top: 25px;
+}
+
+.contacts__link {
+  @include font(12px, 1.5, 500);
+  color: $primaryTextColor;
+}
+
+.container-buttons {
+  margin-top: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__button {
+  width: 161.45px;
+  height: 44px;
+  @include font(16px, 1.3125, 700);
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  &:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__button--pink {
+  color: $whiteColor;
+  background-color: $btnRedBg;
+}
+
+.contacts__button--white {
+  color: $accentColor;
+  background-color: $whiteColor;
+  &:hover,
+  &:focus {
+    background-color: $btnLightHover;
+  }
+}
