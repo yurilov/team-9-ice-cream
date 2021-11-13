@@ -1,6 +1,8 @@
 .contacts {
-  padding-left: 50px;
-  padding-right: 50px;
+  & .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 // .contacts__list {
@@ -124,10 +126,10 @@
   }
 }
 
-.contacts__icon--white {
-  fiil: $whiteColor;
-}
+// .contacts__icon--white {
+//   fiil: $whiteColor;
+// }
 
-.contacts__icon--pink {
-  fiil: $accentColor;
-}
+// .contacts__icon--pink {
+//   fiil: $accentColor;
+// }
