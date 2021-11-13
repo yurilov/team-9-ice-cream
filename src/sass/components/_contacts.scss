@@ -3,16 +3,16 @@
   padding-right: 50px;
 }
 
-.contacts__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+// .contacts__list {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .contacts__card-compani {
-  width: 220px;
-  padding: 43px 21px 43px 20px;
+  min-width: 220px;
+  padding: 43px 20px;
   background: $whiteColor;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -22,27 +22,22 @@
 }
 
 .contacts__compani {
-  height: 16px;
+  height: line-height;
   margin-bottom: 25px;
   @include font(12px, 1.86, 500, 0.04);
   display: inline-block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // text-align: center;
-
   color: $whiteColor;
   border-radius: 4px;
 }
 
 .contacts__compani--brown {
+  padding: 0 24px;
   background: $iceCoffeBg;
-  width: 80px;
 }
 
 .contacts__compani--green {
+  padding: 0 30px;
   background: $milkshakesBg;
-  width: 130px;
 }
 
 .contacts__city-compani {
@@ -53,7 +48,7 @@
 
 .contacts__text {
   margin-bottom: 25px;
-  @include font(12px, 1.5, 500);
+  @include font(12px, 1.5, 500, 0);
   color: $primaryTextColor;
 }
 
@@ -84,6 +79,10 @@
 .contacts__link {
   @include font(12px, 1.5, 500);
   color: $primaryTextColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .container-buttons {
@@ -95,6 +94,7 @@
 }
 
 .contacts__button {
+  cursor: pointer;
   width: 161.45px;
   height: 44px;
   @include font(16px, 1.3125, 700);
@@ -109,6 +109,10 @@
 .contacts__button--pink {
   color: $whiteColor;
   background-color: $btnRedBg;
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
 }
 
 .contacts__button--white {
