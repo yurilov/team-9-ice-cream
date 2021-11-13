@@ -29,6 +29,8 @@
   border-radius: 24px;
 
   &__heading {
+    padding-top: 160px;
+
     font-family: $tittleFont;
     font-size: 20px;
     line-height: 1.15;
@@ -49,10 +51,8 @@
 }
 
 .product-card {
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 113px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-top: 130px;
   }
 }
 
