@@ -113,6 +113,8 @@
     content: '';
     width: 26px;
     height: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-image: url(../images/dots.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
