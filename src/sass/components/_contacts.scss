@@ -1,0 +1,135 @@
+.contacts {
+  & .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+// .contacts__list {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.contacts-card {
+  min-width: 220px;
+  padding: 43px 20px;
+  background: $whiteColor;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts-card__dealerships {
+  height: line-height;
+  margin-bottom: 25px;
+  @include font(12px, 1.86, 500, 0.04);
+  display: inline-block;
+  color: $whiteColor;
+  border-radius: 4px;
+}
+
+.contacts-card__dealerships--brown {
+  padding: 0 24px;
+  background: $iceCoffeBg;
+}
+
+.contacts-card__dealerships--green {
+  padding: 0 30px;
+  background: $milkshakesBg;
+}
+
+.contacts-card__city {
+  margin-bottom: 10px;
+  @include font(12px, 1.86, 500, 0.04);
+  color: $blackColor;
+}
+
+.contacts-card__text {
+  margin-bottom: 25px;
+  @include font(12px, 1.5, 500, 0);
+  color: $primaryTextColor;
+}
+
+.contacts-schedule {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid $footerBorderColor;
+  border-bottom: 1px solid $footerBorderColor;
+  &:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts-schedule__text {
+  @include font(12px, 1.86, 500);
+  color: $blackColor;
+}
+
+.time {
+  @include font(12px, 1.86, 500);
+  color: $preTittleColor;
+}
+
+.contacts_list-contacts {
+  margin-top: 25px;
+}
+
+.contacts__link {
+  @include font(12px, 1.5, 500);
+  color: $primaryTextColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.contacts__buttons {
+  margin-top: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__button {
+  cursor: pointer;
+  width: 161.45px;
+  height: 44px;
+  @include font(16px, 1.3125, 700);
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  &:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__button--pink {
+  color: $whiteColor;
+  background-color: $btnRedBg;
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+
+.contacts__button--white {
+  color: $accentColor;
+  background-color: $whiteColor;
+  &:hover,
+  &:focus {
+    background-color: $btnLightHover;
+  }
+}
+
+// .contacts__icon--white {
+//   fiil: $whiteColor;
+// }
+
+// .contacts__icon--pink {
+//   fiil: $accentColor;
+// }
