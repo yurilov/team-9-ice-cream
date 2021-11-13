@@ -1,13 +1,13 @@
 .about {
     background-color: $secondaryBg;
-    // background-image: url(../images/about-bg-mob-1x.png);
+    background-image: url(../images/mobile/about-bg-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 766px;
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        // background-image: url(../images/about-bg-mob-2x.png);
+        background-image: url(../images/mobile/about-bg-mobile@2x.png);
         }
 }
 
@@ -41,8 +41,6 @@
 }
 
 .about__caw-container {
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 46px;
 }
 
