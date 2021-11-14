@@ -11,4 +11,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/modal"),require("./js/franchise-modal"),require("./js/buy-modal"),require("./js/flip.js");
 },{"./sass/main.scss":"clu1","./js/modal":"RSqK","./js/franchise-modal":"CL4D","./js/buy-modal":"srHc","./js/flip.js":"z9QZ"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-9-ice-cream/src.0f745497.js.map
+//# sourceMappingURL=/team-9-ice-cream/src.60443a2e.js.map
