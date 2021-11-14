@@ -4,64 +4,83 @@
     <h2 class="product__heading">products</h2>
     <ul class="product__list list">
       <li class="product-card product-card--cream">
-        <picture class="product-picture__icecream">
-          <source
-            srcset="
-              images/mobile/products-icecream-mobile.png    1x,
-              images/mobile/products-icecream-mobile@2x.png 2x
-            "
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px, 100vw"
-          />
+        <div class="product-card__front" data-cream-front>
+          <h3 class="product-card__heading">ice cream</h3>
+          <p class="product-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button type="button" class="product-card__btn" data-cream-rotate-front>
+            <svg class="btn__icon">
+              <use href="/images/icons.svg#icon-arrow-2"></use>
+            </svg>
+          </button>
+        </div>
 
-          <img src="images/mobile/products-icecream-mobile.png" alt="icecream" />
-        </picture>
-        <h3 class="product-card__heading">ice cream</h3>
-        <p class="product-card__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et. dolore magna aliqua facilisis.
-        </p>
-        <button type="button" class="product-card__btn">aaa</button>
+        <div class="product-card__back flipped cream" data-cream-back>
+          <p class="product-card__text product-card__text--back">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae labore a esse, nam
+            accusamus ipsum voluptatibus deleniti laborum cum. Possimus?
+          </p>
+          <button type="button" class="product-card__btn" data-cream-rotate-back>
+            <svg class="btn__icon btn__icon--back">
+              <use href="/images/icons.svg#icon-arrow-2"></use>
+            </svg>
+          </button>
+        </div>
       </li>
       <li class="product-card product-card--coffee">
-        <picture class="product-picture__icecream">
-          <source
-            srcset="
-              images/mobile/products-icecoffee-mobile.png    1x,
-              images/mobile/products-icecoffee-mobile@2x.png 2x
-            "
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px, 100vw"
-          />
+        <div class="product-card__front" data-coffee-front>
+          <h3 class="product-card__heading">ice coffee</h3>
+          <p class="product-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button type="button" class="product-card__btn" data-coffee-rotate-front>
+            <svg class="btn__icon">
+              <use href="/images/icons.svg#icon-arrow-2"></use>
+            </svg>
+          </button>
+        </div>
 
-          <img src="images/mobile/products-icecoffee-mobile.png" alt="icecoffe" />
-        </picture>
-        <h3 class="product-card__heading">ice coffee</h3>
-        <p class="product-card__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et. dolore magna aliqua facilisis.
-        </p>
-        <button type="button" class="product-card__btn">aaa</button>
+        <div class="product-card__back flipped coffee" data-coffee-back>
+          <p class="product-card__text product-card__text--back">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae labore a esse, nam
+            accusamus ipsum voluptatibus deleniti laborum cum. Possimus?
+          </p>
+          <button type="button" class="product-card__btn" data-coffee-rotate-back>
+            <svg class="btn__icon btn__icon--back">
+              <use href="/images/icons.svg#icon-arrow-2"></use>
+            </svg>
+          </button>
+        </div>
       </li>
-      <li class="product-card product-card--milkshakes">
-        <picture class="product-picture__icecream">
-          <source
-            srcset="
-              images/mobile/products-milkshake-mobile.png    1x,
-              images/mobile/products-milkshake-mobile@2x.png 2x
-            "
-            media="(max-width: 767px)"
-            sizes="(min-width: 320px) 320px, 100vw"
-          />
 
-          <img src="images/mobile/products-milkshake-mobile.png" alt="milkshake" />
-        </picture>
-        <h3 class="product-card__heading">milkshakes</h3>
-        <p class="product-card__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et. dolore magna aliqua facilisis.
-        </p>
-        <button type="button" class="product-card__btn">aaa</button>
+      <li class="product-card product-card--milkshakes">
+        <div class="product-card__front" data-milkshakes-front>
+          <h3 class="product-card__heading">milkshakes</h3>
+          <p class="product-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button type="button" class="product-card__btn" data-milkshakes-rotate-front>
+            <svg class="btn__icon">
+              <use href="/images/icons.svg#icon-arrow-2"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="product-card__back flipped milkshakes" data-milkshakes-back>
+          <p class="product-card__text product-card__text--back">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae labore a esse, nam
+            accusamus ipsum voluptatibus deleniti laborum cum. Possimus?
+          </p>
+          <button type="button" class="product-card__btn" data-milkshakes-rotate-back>
+            <svg class="btn__icon btn__icon--back">
+              <use href="/images/icons.svg#icon-arrow-2"></use>
+            </svg>
+          </button>
+        </div>
       </li>
     </ul>
   </div>
