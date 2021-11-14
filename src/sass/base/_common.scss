@@ -4,6 +4,12 @@ body {
   font-family: $mainFont;
 }
 
+body.buy-modal-open,
+.franchise-modal-open,
+.locations-modal-open {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
