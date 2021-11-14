@@ -87,11 +87,11 @@
 
   @media (min-width: 768px) {
     margin-right: 17px;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1280px) {
     margin-right: 74px;
-    margin-bottom: 0;
   }
 }
 
@@ -132,7 +132,11 @@
 }
 
 .about__text {
-  margin-bottom: 26px;
+  margin-bottom: 10px;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 26px;
+  }
 }
 
 .about__button {
@@ -159,7 +163,7 @@
   }
 
   @media (min-width: 1280px) {
-    margin-top: 48px;
+    margin-top: 45px;
   }
 }
 
