@@ -159,6 +159,10 @@
     justify-content: space-between;
     padding-bottom: 40px;
 
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 50px;
+    }
+
     top: 160px;
     left: 0;
     right: 0;
