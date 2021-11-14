@@ -1,0 +1,230 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.franchise__modal {
+  @media screen and (max-width: 479px) {
+    width: 100vw;
+  }
+
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.franchise__close-btn {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.franchise__close-btn__icon {
+  width: 30px;
+  height: 30px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .franchise__close-btn:hover & {
+    fill: $accentColor;
+  }
+}
+
+.franchise__modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primaryTextColor;
+  margin-bottom: 12px;
+}
+
+.franchise__modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.franchise__modal__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  cursor: pointer;
+}
+
+.franchise__modal__input-box {
+  position: relative;
+}
+
+.franchise__modal__input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  cursor: pointer;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+
+  &:focus {
+    border: 1px solid $accentColor;
+    outline: none;
+  }
+}
+
+.franchise__modal__ikon {
+  width: 18px;
+  height: 18px;
+  fill: $primaryTextColor;
+  position: absolute;
+  display: block;
+  top: 11px;
+  left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .franchise__modal__input:focus + & {
+    fill: $accentColor;
+  }
+}
+
+.franchise__modal__comment {
+  margin-bottom: 20px;
+  min-height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+  color: $primaryTextColor;
+  resize: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+
+  &:focus {
+    border: 1px solid $accentColor;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.franchise__checkbox__tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.franchise__checkbox__label {
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.franchise__checkbox:checked + .franchise__check {
+  background-image: url();
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+}
+
+.franchise__check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $primaryTextColor;
+  border-radius: 4px;
+  margin-right: 7px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise__checkbox__link {
+  color: $primaryTextColor;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

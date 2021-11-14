@@ -1,0 +1,53 @@
+<button type="button" data-franchise-modal-open>franchise временная кнопка</button>
+<div class="container">
+    <div class="franchise__backdrop backdrop is-hidden" data-franchise-backdrop-close data-franchise-modal>
+        <div class="franchise__modal modal" data-franchise-modal-open>
+            <button type="button" class="franchise__close-btn close-btn" data-franchise-modal-close><svg
+                    class="franchise__close-btn__icon close-btn__icon">
+                    <use href="/images/icons.svg#icon-close_40px"></use>
+                </svg>
+            </button>
+            <p class="franchise__modal__title modal__title">franchise</p>
+            <form action="" class="franchise__modal__form">
+
+                <label for="user-name" class="franchise__modal__label">Text</label>
+                <div class="franchise__modal__input-box">
+                    <input type="name" id="user-name" name="user-name" placeholder="" class="franchise__modal__input">
+                    <svg class="franchise__modal__ikon">
+                        <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
+                </div>
+
+                <label for="user-tel" class="franchise__modal__label">Text</label>
+                <div class="franchise__modal__input-box">
+                    <input type="tel" id="user-tel" name="user-tel" placeholder="" class="franchise__modal__input">
+                    <svg class="franchise__modal__ikon">
+                        <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                </div>
+
+                <label for="user-email" class="franchise__modal__label">email</label>
+                <div class="franchise__modal__input-box">
+                    <input type="email" id="user-email" name="user-email" placeholder="" class="franchise__modal__input">
+                    <svg class="franchise__modal__ikon">
+                        <use href="./images/icons.svg#icon-email-black"></use>
+                    </svg>
+                </div>
+                <label for="user-comment" class="franchise__modal__label">comment</label>
+                <textarea type="text" id="user-comment" name="user-comment" placeholder="Text" rows="5"
+                    class="franchise__modal__comment"></textarea>
+                <div class="franchise__checkbox__tumb">
+                    <label for="checkbox" class="franchise__checkbox__label"><input type="checkbox" name="checkbox"
+                            id="checkbox" value="Соглашаюсь с рассылкой и принимаю"
+                            class="franchise__checkbox visibility-hidden">
+                        <span class="franchise__check"></span>Соглашаюсь с рассылкой и принимаю <a href=""
+                            class="franchise__checkbox__link">Условия договора</a></label>
+                </div>
+                <button type="submit" class="franchise__modal-button button"><span
+                        class="franchise__modal-button-text">buy</span></button>
+
+            </form>
+        </div>
+
+    </div>
+</div>
