@@ -18,7 +18,7 @@
   pointer-events: none;
 }
 
-.modal {
+.locations-modal {
   @media screen and (max-width: 479px) {
     width: 100vw;
   }
@@ -41,7 +41,7 @@
   }
 }
 
-.close-btn {
+.locations-modal__close-btn {
   position: absolute;
   right: 14px;
   top: 14px;
@@ -56,7 +56,7 @@
   justify-content: center;
 }
 
-.close-btn__icon {
+.locations-modal__close-btn_icon {
   width: 30px;
   height: 30px;
   fill: #000;
@@ -64,12 +64,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .close-btn:hover & {
+  .locations-modal__close-btn:hover & {
     fill: $accentColor;
   }
 }
 
-.modal__title {
+.locations-modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -79,7 +79,7 @@
   margin-bottom: 12px;
 }
 
-.map {
+.locations-modal__map {
   width: 100%;
   display: block;
 }

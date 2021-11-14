@@ -16,10 +16,9 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  z-index: 1000;
 }
 
-.franchise__modal {
+.franchise-modal {
   @media screen and (max-width: 479px) {
     width: 100vw;
   }
@@ -42,7 +41,7 @@
   }
 }
 
-.franchise__close-btn {
+.franchise-modal__close-btn {
   position: absolute;
   right: 14px;
   top: 14px;
@@ -57,19 +56,19 @@
   justify-content: center;
 }
 
-.franchise__close-btn__icon {
+.franchise-modal__close-btn_icon {
   width: 30px;
   height: 30px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .franchise__close-btn:hover & {
+  .franchise-modal__close-btn:hover & {
     fill: $accentColor;
   }
 }
 
-.franchise__modal__title {
+.franchise-modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -79,12 +78,12 @@
   margin-bottom: 12px;
 }
 
-.franchise__modal__form {
+.franchise-modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.franchise__modal__label {
+.franchise-modal__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -93,11 +92,11 @@
   cursor: pointer;
 }
 
-.franchise__modal__input-box {
+.franchise-modal__input-box {
   position: relative;
 }
 
-.franchise__modal__input {
+.franchise-modal__input {
   width: 100%;
   margin-bottom: 10px;
   height: 40px;
@@ -124,7 +123,7 @@
   }
 }
 
-.franchise__modal__ikon {
+.franchise-modal__ikon {
   width: 18px;
   height: 18px;
   fill: $primaryTextColor;
@@ -136,12 +135,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .franchise__modal__input:focus + & {
+  .franchise-modal__input:focus + & {
     fill: $accentColor;
   }
 }
 
-.franchise__modal__comment {
+.franchise-modal__comment {
+  width: 100%;
   margin-bottom: 20px;
   min-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -170,14 +170,14 @@
   }
 }
 
-.franchise__checkbox__tumb {
+.franchise-modal__checkbox_tumb {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.franchise__checkbox__label {
+.franchise-modal__checkbox_label {
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -195,14 +195,14 @@
   }
 }
 
-.franchise__checkbox:checked + .franchise__check {
+.franchise-modal__checkbox:checked + .franchise-modal__check {
   background-image: url();
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
 }
 
-.franchise__check {
+.franchise-modal__check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -214,7 +214,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.franchise__checkbox__link {
+.franchise-modal__checkbox_link {
   color: $primaryTextColor;
   letter-spacing: 0.03em;
 

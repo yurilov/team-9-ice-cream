@@ -2,7 +2,6 @@
   const refs = {
     openModalBtn: document.querySelector('[data-franchise-modal-open]'),
       closeModalBtn: document.querySelector('[data-franchise-modal-close]'),
-    closeModalBtn: document.querySelector('[data-franchise-modal]'),
     modal: document.querySelector('[data-franchise-modal]'),
   };
 
@@ -11,6 +10,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle("franchise__modal-open");
+    document.body.classList.toggle("franchise-modal-open");
   }
 })();

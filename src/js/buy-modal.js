@@ -1,8 +1,7 @@
 (() => {
   const refs = {
-      closeModalBtn: document.querySelector('[data-buy-modal-close]'),
-    closeModalBtn: document.querySelector('[data-buy-backdrop-close]'),
     openModalBtn: document.querySelector('[data-buy-modal-open]'),
+      closeModalBtn: document.querySelector('[data-buy-modal-close]'),
     modal: document.querySelector('[data-buy-modal]'),
   };
 
@@ -11,6 +10,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle("buy__modal-open");
+    document.body.classList.toggle("buy-modal-open");
   }
 })();

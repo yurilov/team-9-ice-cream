@@ -19,7 +19,7 @@
 //   z-index: 1000;
 // }
 
-.buy__modal {
+.buy-modal {
   @media screen and (max-width: 479px) {
     width: 100vw;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-.buy__close-btn {
+.buy-modal__close-btn {
   position: absolute;
   right: 14px;
   top: 14px;
@@ -57,19 +57,19 @@
   justify-content: center;
 }
 
-.buy__close-btn__icon {
+.buy-modal__close-btn_icon {
   width: 30px;
   height: 30px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .buy__close-btn:hover & {
+  .buy-modal__close-btn:hover & {
     fill: $accentColor;
   }
 }
 
-.buy__modal__title {
+.buy-modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -79,12 +79,12 @@
   margin-bottom: 12px;
 }
 
-.buy__modal__form {
+.buy-modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.buy__modal__label {
+.buy-modal__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
@@ -93,11 +93,11 @@
   cursor: pointer;
 }
 
-.buy__modal__input-box {
+.buy-modal__input-box {
   position: relative;
 }
 
-.buy__modal__input {
+.buy-modal__input {
   width: 100%;
   margin-bottom: 10px;
   height: 40px;
@@ -124,7 +124,7 @@
   }
 }
 
-.buy__modal__ikon {
+.buy-modal__ikon {
   width: 18px;
   height: 18px;
   fill: $primaryTextColor;
@@ -136,12 +136,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .buy__modal__input:focus + & {
+  .buy-modal__input:focus + & {
     fill: $accentColor;
   }
 }
 
-.buy__modal__comment {
+.buy-modal__comment {
   margin-bottom: 20px;
   min-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -170,14 +170,14 @@
   }
 }
 
-.buy__checkbox__tumb {
+.buy-modal__checkbox_tumb {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.buy__checkbox__label {
+.buy-modal__checkbox_label {
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -195,14 +195,14 @@
   }
 }
 
-.buy__checkbox:checked + .buy__check {
+.buy-modal__checkbox:checked + .buy-modal__check {
   background-image: url();
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
 }
 
-.buy__check {
+.buy-modal_check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -214,7 +214,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buy__checkbox__link {
+.buy-modal__checkbox_link {
   color: $primaryTextColor;
   letter-spacing: 0.03em;
 
