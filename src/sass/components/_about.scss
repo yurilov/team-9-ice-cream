@@ -13,6 +13,18 @@
     background-image: none;
     padding-top: 130px;
   }
+
+  @media (min-width: 1280px) {
+    background-image: url(../images/desktop/about-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 342px;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/about-bg-desktop@2x.png);
+        }
+  }
 }
 
 .about__title-label {
@@ -21,9 +33,13 @@
   @include font(18px, 1.14, 400);
   text-align: center;
   color: $preTittleColor;
+
   @media (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 16px;
     font-size: 26px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 30px;
   }
 }
 
@@ -42,16 +58,25 @@
     margin-bottom: 50px;
     font-size: 48px;
   }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 55px;
+    font-size: 58px;
+  }
 }
 
 .about__box {
   padding-bottom: 39px;
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     margin-right: 2px;
     margin-left: 5px;
     padding-bottom: 66px;
+  }
+  @media (min-width: 1280px) {
+    padding-bottom: 39px;
   }
 }
 
@@ -63,6 +88,11 @@
   @media (min-width: 768px) {
     margin-right: 17px;
   }
+
+  @media (min-width: 1280px) {
+    margin-right: 74px;
+    margin-bottom: 0;
+  }
 }
 
 .about__text-container {
@@ -71,11 +101,19 @@
   font-family: $mainFont;
   @include font(12px, 1.62, 500, 0em);
   color: $primaryTextColor;
+
   @media (min-width: 768px) {
     margin: 0;
     width: 340px;
     @include font(14px, 1.76, 500, 0em);
     padding-top: 50px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 463px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+    padding-top: 51px;
   }
 }
 
@@ -86,10 +124,15 @@
   @media (min-width: 768px) {
     margin-bottom: 26px;
   }
+
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 }
 
 .about__text {
-  margin-bottom: 10px;
+  margin-bottom: 26px;
 }
 
 .about__button {
@@ -113,6 +156,10 @@
 
   @media (min-width: 768px) {
     margin-top: 62px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 48px;
   }
 }
 
