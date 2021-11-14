@@ -4,9 +4,9 @@ body {
   font-family: $mainFont;
 }
 
-body.buy__modal-open,
-.franchise__modal-open,
-.locations__modal-open {
+body.buy-modal-open,
+.franchise-modal-open,
+.locations-modal-open {
   overflow: hidden;
 }
 

@@ -10,6 +10,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle("locations__modal-open");
+    document.body.classList.toggle("locations-modal-open");
   }
 })();
