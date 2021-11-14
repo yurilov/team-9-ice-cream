@@ -21,7 +21,7 @@
                     </li>
                 </ul>
                 
-                <ul class="contacts_list-contacts list">
+                <ul class="contacts__list-contacts list">
                     <li>
                         <a class="contacts__link link" href="tel:+610383766284">+61(0) 383 766 284</a>
                     </li>
@@ -49,7 +49,7 @@
                     </li>
                 </ul>
                 
-                <ul class="contacts_list-contacts list">
+                <ul class="contacts__list-contacts list">
                     <li>
                         <a class="contacts__link link" href="tel:+610383766284">+61(0) 383 766 284</a>
                     </li>
@@ -77,7 +77,7 @@
                     </li>
                 </ul>
                 
-                <ul class="contacts_list-contacts list">
+                <ul class="contacts__list-contacts list">
                     <li>
                         <a class="contacts__link link" href="tel:+610383766284">+61(0) 383 766 284</a>
                     </li>
@@ -89,16 +89,18 @@
         </ul>
         <ul class="contacts__buttons list">
             <li>
-                <button class="contacts__button contacts__button--pink" type="button">Our Locations
+                <button class="contacts__button contacts__button--pink" type="button" data-locations-modal-open>Our Locations
+
                     <svg class="contacts__icon contacts__icon--white" width="4.43" height="8" preserveAspectRatio="xMidYMid meet">
-                        <use href=""></use>
+                        <use href="/images/icons.svg#icon-arrow-1-white"></use>
                     </svg>
                 </button>
             </li>
-            <li>
-                <button class="contacts__button contacts__button--white" type="button">Franchise
-                    <svg class="contacts__icon contacts__icon--pink" width="4.43" height="8" preserveAspectRatio="xMidYMid meet">
-                        <use href=""></use>
+
+            <li class="contacts__itembtn">
+                <button class="contacts__button contacts__button--white" type="button" data-franchise-modal-open>Franchise
+                    <svg class="contacts__icon contacts__icon--pink" width="6" height="10" preserveAspectRatio="xMidYMid meet">
+                        <use href="/images/icons.svg#icon-arrow-1-red"></use>
                     </svg>
                 </button>
             </li>
