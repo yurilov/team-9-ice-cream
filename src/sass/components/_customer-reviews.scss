@@ -1,7 +1,24 @@
 .customer-reviews {
+  padding-top: 125px;
+  margin-bottom: 20px;
+  background-position: 0 766px;
   & .container {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  &::after {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    content: '...';
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
   }
 }
 
