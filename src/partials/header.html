@@ -1,13 +1,20 @@
 <header>
-    <div class="header-conteiner">
+    <div class="header-conteiner conteiner">
         <a href="index.html" class="header-logo">
             <picture>
                 <source srcset="./images/logo.png 1x, ./images/logo@2x.png 2x">
-                <img src="./images/logo.png" alt="logl" width="199">
+                <img src="./images/logo.png" alt="header-logo" width="199">
 
             </picture>
         </a>
-<!--             <div class="header-nav">
+            <button type="button" class="menu-open-btn">
+                <svg width="20" heith="12" class="open-menu_icon">
+                    <use href="../src/images/icons.svg#icon-Burger"></use>
+                </svg>
+            </button>
+
+
+            <div class="header-nav">
                 <ul class="header-nav_list list">
                     <li class="header-nav_item">
                         <a class="header-nav_item-link link" href="index.html">Home</a>
@@ -25,11 +32,12 @@
                         <a class="header-nav_item-link link" href="#">Contact</a>
                     </li>
                 </ul>
-            </div> -->
-            <button type="button" class="open-btn">
-                <svg class="open-modal_icon" width="20" heith="12">
-                    <use href="../src/images/icons.svg#icon-burger"></use>
-                </svg>
-            </button>
+            </div>
+                <button type="button" class="header-btn btn">Buy now
+                    <svg width="4" heith="8" class="header-btn__icon">
+                        <use href="../src/images/icons.svg#icon-header-btn-icon"></use>
+                    </svg>
+                </button>
+            
     </div>
 </header>
