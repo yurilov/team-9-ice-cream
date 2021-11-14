@@ -1,28 +1,36 @@
-.header-conteiner{
-    background-color: transparent;
+
+.header{
+    & .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     position: absolute;
     width: 100%;
+    background-color: transparent;
     padding-top: 6px;
-    padding-left: 20px;
-    display: flex;
     align-items: center;
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
     padding-top: 37px;
-    padding-left: 34px;
     }
     @media screen and (min-width: 1280px) {
     padding-top: 37px;
+    }
+
+}
+
+.header-container{
+    @media screen and (min-width: 1280px) {
     padding-left: 46px;
     }
 }
 
-.header-logo{
+.logo{
     width: 199px;
     height: 50px;
 }
 
-.menu-open-btn{
-    position: absolute;
+.menu-open{
     width: 20px;
     height: 12px;
     cursor: pointer;
@@ -34,10 +42,6 @@
     padding: 0;
     background-color: transparent;
     border: none;
-    @media screen and (min-width: 767px) {
-    top: 52px;
-    right: 224px;
-    }
     @media screen and (min-width: 1280px) {
     display: none;
     }
@@ -46,7 +50,7 @@
 .open-menu_icon{
     width: 20px;
     height: 12px;
-    fill: #D41443;
+    fill: var($accentColor);
 }
 
 .header-btn{
@@ -61,14 +65,15 @@
     border: none;
     background-color:#ffffff;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: 34px;
     @include font (16px, 21px, 500 );
     @media screen and (max-width: 767px) {
     display: none;
     }
+    @media screen and (min-width: 767px) {
+    margin-left: 30px;
+    }
     @media screen and (min-width: 1280px) {
-   margin-right: 115px;
+    margin-left: 0px;
     }
     &:hover,
     &:focus {
@@ -77,26 +82,25 @@
 }
 
 .header-btn__icon{
-    fill: #D41443;
-    width: 4px;
+    fill: var($accentColor);
+    width: 8px;
     height: 8px;
     margin-left: 12px;
 }
 
-.header-nav_list{
+.header-nav__list{
     display: flex;
-    margin-left: 110px;
     @media screen and (max-width: 1279px) {
     display: none;
     }
 }
 
-.header-nav_item{
-    &:not(:last-child) {
-    margin-right: 35px;
+.header-nav__item{
+    &:not(:first-child) {
+    margin-left: 35px;
   }
 }
-.header-nav_item-link{
+.header-nav__link{
     color: #ffffff;
     @include font (16px, 21px, 700);
     &:hover,
