@@ -1,7 +1,7 @@
 .advantages {
   background-color: $secondaryBg;
   & .container {
-    padding: 0 70px 97px 20px;
+    padding: 66px 20px 97px 20px;
   }
 }
 
@@ -28,11 +28,11 @@
   &.number-first::before {
     position: absolute;
     display: block;
-    bottom: 49px;
+    bottom: 70px;
     content: '';
     width: 33px;
     height: 50px;
-    background-image: url(../images/mobile/advantages-icon1-mobile.png);
+    background-image: url(../images/advantages-icon1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -40,11 +40,11 @@
   &.number-second::before {
     position: absolute;
     display: block;
-    bottom: 49px;
+    bottom: 70px;
     content: '';
     width: 50px;
     height: 50px;
-    background-image: url(../images/mobile/advantages-icon2-mobile.png);
+    background-image: url(../images/advantages-icon2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -53,11 +53,11 @@
   &.number-third::before {
     position: absolute;
     display: block;
-    bottom: 49px;
+    bottom: 70px;
     content: '';
     width: 44px;
     height: 50px;
-    background-image: url(../images/mobile/advantages-icon3-mobile.png);
+    background-image: url(../images/advantages-icon3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
