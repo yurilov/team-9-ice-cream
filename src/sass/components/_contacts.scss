@@ -1,4 +1,20 @@
 .contacts {
+  background-image: linear-gradient($whiteColor 0% 5.7%, $secondaryBg 5.7% 100%);
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient($whiteColor 0% 11.66%, $secondaryBg 11.66% 100%);
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url(/images/desktop/contacts-bg-desktop.png),
+      linear-gradient($whiteColor 0% 13.5%, $secondaryBg 13.5% 100%);
+    background-position: 0 102px, center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/desktop/contacts-bg-desktop@2x.png),
+        linear-gradient($whiteColor 0% 13.5%, $secondaryBg 13.5% 100%);
+    }
+  }
+
   & .container {
     @media screen and (max-width: ($tablet - 1px)) {
       padding-left: 50px;
@@ -207,10 +223,11 @@
 }
 
 .contacts__button {
+  position: relative;
   cursor: pointer;
-  @media screen and (max-width: ($tablet - 1px)) {
-    width: 161.45px;
-  }
+  // @media screen and (max-width: ($tablet - 1px)) {
+  //   width: 161.45px;
+  // }
   height: 44px;
   @include font(16px, 1.3125, 700);
   text-align: center;
@@ -222,6 +239,8 @@
 }
 
 .contacts__button--pink {
+  padding-right: 33px;
+  padding-left: 21px;
   color: $whiteColor;
   background-color: $btnRedBg;
   &:hover,
@@ -229,16 +248,18 @@
     background-color: $accentColor;
   }
   @media screen and (min-width: $tablet) {
-    padding-right: 34px;
-    padding-left: 30px;
+    padding-right: 53px;
+    padding-left: 31px;
   }
   @media screen and (min-width: $desktop) {
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 55px;
+    padding-left: 36px;
   }
 }
 
 .contacts__button--white {
+  padding-right: 51px;
+  padding-left: 35px;
   color: $accentColor;
   background-color: $whiteColor;
   &:hover,
@@ -246,9 +267,39 @@
     background-color: $btnLightHover;
   }
   @media screen and (min-width: $tablet) {
-    padding: 0 38px;
+    padding-right: 59px;
+    padding-left: 41px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 0 39px;
+    padding-right: 62px;
+    padding-left: 43px;
+  }
+}
+
+.contacts__icon--white {
+  position: absolute;
+  top: 17px;
+  right: 14px;
+  @media screen and (min-width: $tablet) {
+    top: 17px;
+    right: 29px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 17px;
+    right: 30px;
+  }
+}
+
+.contacts__icon--pink {
+  position: absolute;
+  top: 17px;
+  right: 30px;
+  @media screen and (min-width: $tablet) {
+    top: 17px;
+    right: 35px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 17px;
+    right: 35px;
   }
 }

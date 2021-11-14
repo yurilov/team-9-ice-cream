@@ -1,0 +1,76 @@
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity $transition-duration $timing-function,
+    visibility $transition-duration $timing-function;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 250px;
+
+  background: $menuBg;
+  box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
+
+  padding-top: 118px;
+  padding-left: 40px;
+  &-close {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    border: none;
+    background-color: transparent;
+
+    &__icon {
+      fill: $whiteColor;
+      transition: fill $transition-duration $timing-function;
+
+      .menu-close:focus &,
+      .menu-close:hover & {
+        fill: $accentColor;
+      }
+    }
+  }
+
+  &-btn {
+    width: 160px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    outline: none;
+    color: $accentColor;
+    border: none;
+    background-color: $whiteColor;
+    cursor: pointer;
+    @include font(16px, 21px, 500);
+    &__icon {
+      width: 8px;
+      height: 8px;
+      margin-left: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $btnLightHover;
+    }
+  }
+}
