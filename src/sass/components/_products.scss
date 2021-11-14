@@ -159,6 +159,10 @@
     justify-content: space-between;
     padding-bottom: 40px;
 
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 50px;
+    }
+
     top: 160px;
     left: 0;
     right: 0;
@@ -319,7 +323,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-
+  background-color: $whiteColor;
   cursor: pointer;
 }
 
