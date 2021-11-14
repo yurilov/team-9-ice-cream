@@ -6,20 +6,6 @@
     padding-left: 50px;
     padding-right: 50px;
   }
-
-  &::after {
-    position: relative;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    content: '...';
-    color: red;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1;
-  }
 }
 
 .slider {
@@ -84,5 +70,21 @@
     background-image: url(/images/home.png);
     background-repeat: no-repeat;
     border-radius: 0px;
+  }
+}
+
+.slide-span::after {
+  display: block;
+  margin: 30px auto;
+  content: '';
+  width: 26px;
+  height: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  //background-image: url(../images/dots.png);
+  color: #c7133e;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/dots@2x.png);
   }
 }
