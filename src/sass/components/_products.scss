@@ -141,6 +141,33 @@
     background-position: center;
     background-size: cover;
   }
+
+  &__front {
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.flipped {
+      transform: rotateY(-180deg);
+    }
+  }
+
+  &__back {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-bottom: 41px;
+    border-radius: 24px;
+    background-color: $iceCoffeBg;
+
+    &.flipped {
+      transform: rotateY(-180deg);
+    }
+  }
 }
 
 .product-card--cream {
