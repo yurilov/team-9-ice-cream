@@ -1,4 +1,5 @@
 .about {
+    padding-top: 125px;
     background-color: $secondaryBg;
     background-image: url(../images/mobile/about-bg-mobile.png);
     background-repeat: no-repeat;
@@ -12,14 +13,11 @@
 }
 
 .about__title-label {
-    padding-top: 125px;
     margin-bottom: 15px;
     font-family: $tittleFont;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.14;
+    @include font(18px, 1.14, 400);
     text-align: center;
-    color: rgba(255, 165, 186, 1);
+    color: $preTittleColor;
 }
 
 .about__title {
@@ -27,13 +25,10 @@
     margin: 0 auto;
     margin-bottom: 26px;
     font-family: $tittleFont;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
+    @include font(34px, 1.14, 400);
     text-align: center;
     text-transform: uppercase;
-    color: rgba(212, 20, 67, 1);
+    color: $accentColor;
 }
 
 .about__box {
@@ -50,14 +45,12 @@
     margin: 0 auto;
     width: 220px;
     font-family: $mainFont;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.62;
-    color: rgba(144, 126, 130, 1);
+    @include font(12px, 1.62, 500, 0em);
+    color: $primaryTextColor;
 }
 
 .about__main-text {
-    color: rgba(0, 0, 0, 1);
+    color: $blackColor;
     margin-bottom: 32px;
 }
 
@@ -66,25 +59,22 @@
 }
 
 .about__button {
-    align-items: center;
     height: 44px;
     margin-top: 17px;
     padding-right: 37px;
     padding-left: 37px;
     font-family: $mainFont;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.3;
+    @include font(14px, 1.3, 700, 0em);
     text-align: center;
-    color: rgba(212, 20, 67, 1);
-    background-color: #FFFFFF;
-    border-width: 0;
+    color: $accentColor;
+    background-color: $whiteColor;
+    border-style: none;
     border-radius: 22px;
     cursor: pointer;
     &:hover,
     &:focus
           {
-        background-color:#ECEBEB;
+        background-color:$btnLightHover;
      }
      transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
