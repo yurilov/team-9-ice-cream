@@ -1,0 +1,90 @@
+.footer {
+  padding-top: 113px;
+  padding-bottom: 25px;
+  background-color: $secondaryBg;
+
+  &__title-box {
+    @media screen and (max-width: ($tablet - 1px)) {
+      margin-bottom: 43px;
+      width: 234px;
+    }
+  }
+
+  &__pre-title {
+    font-family: $tittleFont;
+    @include font(18px, (21 / 18));
+    color: $preTittleColor;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    font-family: $tittleFont;
+    @include font(34px, (39 / 34));
+    color: $accentColor;
+    text-transform: uppercase;
+  }
+
+  &__contacts-box {
+    text-align: right;
+  }
+
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 46px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 28px;
+      }
+    }
+
+    &__link {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $socialBg;
+      border-radius: 50%;
+
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background-color: $accentColor;
+      }
+    }
+
+    &__icon {
+      fill: $whiteColor;
+    }
+  }
+
+  &__text {
+    color: $blackColor;
+    @include font(12px, 1.86, 700);
+
+    margin-bottom: 43px;
+  }
+
+  &__tel {
+    color: $accentColor;
+  }
+
+  &__copyright-box {
+    text-align: center;
+    padding-top: 22px;
+    border-top: 1px solid $footerBorderColor;
+  }
+
+  &__copyright-text {
+    @include font(14px, 1.52, 700);
+
+    @media screen and (max-width: ($tablet - 1px)) {
+      width: 150px;
+      margin: 0 auto;
+    }
+  }
+}
