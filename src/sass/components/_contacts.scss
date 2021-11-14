@@ -9,11 +9,10 @@
     background-position: 0 102px, center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/desktop/contacts-bg-desktop@2x.png),
-      linear-gradient($whiteColor 0% 13.5%, $secondaryBg 13.5% 100%);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/desktop/contacts-bg-desktop@2x.png),
+        linear-gradient($whiteColor 0% 13.5%, $secondaryBg 13.5% 100%);
+    }
   }
 
   & .container {
