@@ -1,16 +1,19 @@
 .advantages {
   background-color: $secondaryBg;
   & .container {
-    padding: 66px 20px 97px 20px;
+    padding: 0px 20px 97px 20px;
   }
 }
 
 .advantages {
+  &__item {
+    position: relative;
+    padding-top: 66px;
+  }
   &__item:not(:last-child) {
-    margin-bottom: 104px;
+    margin-bottom: 38px;
   }
   &__number {
-    position: relative;
     font-family: $tittleFont;
     @include font(36px, (41.22/36), 400);
     color: $accentColor;
@@ -18,48 +21,56 @@
     margin-bottom: 18px;
   }
   &__info {
-    font-family: $mainFont;
     @include font(12px, (20.4/12), 700);
     color: $blackColor;
   }
 }
 
 .advantages__number {
-  &.number-first::before {
+  &.number--first::before {
     position: absolute;
     display: block;
-    bottom: 70px;
+    top: 0;
     content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 33px;
     height: 50px;
     background-image: url(../images/advantages-icon1.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantages-icon1@2x.png);
+    }
+  }
+  &.number--second::before {
+    position: absolute;
+    display: block;
+    top: 10px;
+    content: '';
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-  &.number-second::before {
-    position: absolute;
-    display: block;
-    bottom: 70px;
-    content: '';
     width: 50px;
     height: 50px;
     background-image: url(../images/advantages-icon2.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantages-icon2@2x.png);
+    }
+  }
+
+  &.number--third::before {
+    position: absolute;
+    display: block;
+    top: 10px;
+    content: '';
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-
-  &.number-third::before {
-    position: absolute;
-    display: block;
-    bottom: 70px;
-    content: '';
     width: 44px;
     height: 50px;
     background-image: url(../images/advantages-icon3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantages-icon3@2x.png);
+    }
   }
 }
