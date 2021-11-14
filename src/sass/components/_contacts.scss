@@ -4,55 +4,65 @@
       padding-left: 50px;
       padding-right: 50px;
     }
+    @media screen and (min-width: $tablet) {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-left: 115px;
+      padding-right: 115px;
+    }
   }
 }
 
 .contacts__list {
   @media screen and (min-width: $tablet) {
     display: flex;
+    margin-left: -20px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: -30px;
   }
 }
 
 .contacts-card {
-  min-width: 220px;
+  @media screen and (max-width: ($tablet - 1px)) {
+    min-width: 220px;
+  }
   padding: 43px 20px;
   background: $whiteColor;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 3 - 20px);
     padding: 50px 31px;
+    margin-left: 20px;
   }
   @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 3 - 30px);
     padding: 51px 44px 62px 43px;
+    margin-left: 30px;
   }
   &:not(:last-child) {
     @media screen and (max-width: ($tablet - 1px)) {
       margin-bottom: 20px;
     }
   }
-  &:not(:last-child) {
-    @media screen and (min-width: $tablet) {
-      margin-right: 20px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-right: 30px;
-    }
-  }
 }
 
 .contacts-card__dealerships {
   margin-bottom: 25px;
-  @include font(12px, 1.86, 500, 0.04);
+  @include font(12px, 1.86);
   display: inline-block;
   color: $whiteColor;
   border-radius: 4px;
   @media screen and (min-width: $tablet) {
-    @include font(16px, 1.86, 500, 0.04);
+    @include font(16px, 1.86);
     border-radius: 6px;
     margin-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
-    margin-right: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -74,14 +84,14 @@
 
 .contacts-card__city {
   margin-bottom: 10px;
-  @include font(12px, 1.86, 500, 0.04);
+  @include font(12px, 1.86);
   color: $blackColor;
   @media screen and (min-width: $tablet) {
-    @include font(14px, 1.86, 500, 0.04);
+    @include font(14px, 1.86);
     margin-bottom: 14px;
   }
   @media screen and (min-width: $desktop) {
-    @include font(16px, 1.86, 500, 0.04);
+    @include font(16px, 1.86);
     margin-bottom: 10px;
   }
 }
@@ -95,7 +105,7 @@
     margin-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
-    @include font(16px, 1.83, 500, 0.04);
+    @include font(16px, 1.83);
     margin-bottom: 32px;
   }
 }
@@ -134,7 +144,7 @@
     @include font(14px, 1.86, 500, 0);
   }
   @media screen and (min-width: $desktop) {
-    @include font(16px, 1.86, 500, 0.04);
+    @include font(16px, 1.86);
   }
 }
 
@@ -187,8 +197,7 @@
   }
 }
 
-.contacts__itembtn {
-  height: line-height;
+.contacts__itembtn:nth-child(1) {
   @media screen and (min-width: $tablet) {
     margin-right: 14.5px;
   }
@@ -220,12 +229,12 @@
     background-color: $accentColor;
   }
   @media screen and (min-width: $tablet) {
-    padding-right: 33px;
-    padding-left: 31px;
+    padding-right: 34px;
+    padding-left: 30px;
   }
   @media screen and (min-width: $desktop) {
     padding-right: 35px;
-    padding-left: 36px;
+    padding-left: 35px;
   }
 }
 
@@ -237,19 +246,9 @@
     background-color: $btnLightHover;
   }
   @media screen and (min-width: $tablet) {
-    padding-right: 37.5px;
-    padding-left: 41px;
+    padding: 0 38px;
   }
   @media screen and (min-width: $desktop) {
-    padding-right: 39px;
-    padding-left: 43.5px;
+    padding: 0 39px;
   }
 }
-
-// .contacts__icon--white {
-//   fiil: $whiteColor;
-// }
-
-// .contacts__icon--pink {
-//   fiil: $accentColor;
-// }
