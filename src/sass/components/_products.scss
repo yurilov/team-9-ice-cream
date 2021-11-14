@@ -153,6 +153,12 @@
 
   &__back {
     position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
     top: 160px;
     left: 0;
     right: 0;
@@ -160,12 +166,20 @@
     backface-visibility: hidden;
     transform: rotateY(0deg);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-bottom: 41px;
     border-radius: 24px;
-    background-color: $iceCoffeBg;
 
     &.flipped {
       transform: rotateY(-180deg);
+    }
+
+    &.coffee {
+      background-color: $iceCoffeBg;
+    }
+    &.milkshake {
+      background-color: $milkshakesBg;
+    }
+    &.cream {
+      background-color: $heroBg;
     }
   }
 }
@@ -298,7 +312,7 @@
 .product-card__btn {
   display: block;
   border: none;
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
   width: 40px;
   height: 40px;
