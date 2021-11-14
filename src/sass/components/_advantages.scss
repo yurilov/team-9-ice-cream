@@ -1,7 +1,17 @@
 .advantages {
   background-color: $secondaryBg;
   & .container {
-    padding: 0px 20px 97px 20px;
+    padding-bottom: 97px;
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 140px;
+      padding-left: 36px;
+      padding-right: 56px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-left: 113px;
+      padding-right: 117px;
+      padding-bottom: 139px;
+    }
   }
 }
 
@@ -9,9 +19,22 @@
   &__item {
     position: relative;
     padding-top: 66px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 86px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 90px;
+    }
   }
   &__item:not(:last-child) {
     margin-bottom: 38px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 60px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
   }
   &__number {
     font-family: $tittleFont;
@@ -19,10 +42,30 @@
     color: $accentColor;
     display: block;
     margin-bottom: 18px;
+    @media screen and (min-width: $tablet) {
+      @include font(48px, (54.96/48), 400);
+      margin-bottom: 13px;
+    }
+    @media screen and (min-width: $desktop) {
+      @include font(58px, (66.41/58), 400);
+      margin-bottom: 15px;
+    }
   }
   &__info {
     @include font(12px, (20.4/12), 700);
+    @media screen and (min-width: $tablet) {
+      @include font(14px, (24.36/14), 700);
+    }
+    @media screen and (min-width: $desktop) {
+      @include font(16px, (28.26/16), 700);
+    }
     color: $blackColor;
+  }
+}
+
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
   }
 }
 
@@ -45,7 +88,7 @@
   &.number--second::before {
     position: absolute;
     display: block;
-    top: 10px;
+    top: 0;
     content: '';
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +104,7 @@
   &.number--third::before {
     position: absolute;
     display: block;
-    top: 10px;
+    top: 0;
     content: '';
     background-repeat: no-repeat;
     background-position: center;
