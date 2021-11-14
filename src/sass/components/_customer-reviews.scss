@@ -1,13 +1,42 @@
+.customer-reviews {
+  & .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .slider {
   width: 40rem;
 }
 
 .slide {
   img {
-    display: flex;
-    width: 50%;
+    position: relative;
+    display: block;
+    min-width: 120px;
+    max-width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85px;
+    height: 85px;
   }
+}
+
+.slide-text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30.6px;
+  text-align: center;
+  color: $blackColor;
+}
+
+.slide-ellipse {
+  display: flex;
 }
 
 .slick-dots {
@@ -28,15 +57,15 @@
     width: 1rem;
     height: 1rem;
     padding: 0;
-
     border: none;
     border-radius: 100%;
-    background-color: blue;
-
+    background-color: #d9d9d9;
     text-indent: -9999px;
   }
 
   li.slick-active button {
-    background-color: red;
+    background-image: url(/images/home.png);
+    background-repeat: no-repeat;
+    border-radius: 0px;
   }
 }

@@ -674,14 +674,47 @@ body {
   margin-left: 14px;
 }
 
+.customer-reviews .container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .slider {
   width: 40rem;
 }
 
 .slide img {
+  position: relative;
   display: block;
-  width: 100%;
+  min-width: 120px;
+  max-width: 100%;
   height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85px;
+  height: 85px;
+}
+
+.slide-text {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30.6px;
+  text-align: center;
+  color: #000000;
+}
+
+.slide-ellipse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slick-dots {
@@ -707,12 +740,14 @@ body {
   padding: 0;
   border: none;
   border-radius: 100%;
-  background-color: blue;
+  background-color: #d9d9d9;
   text-indent: -9999px;
 }
 
 .slick-dots li.slick-active button {
-  background-color: red;
+  background-image: url(/images/home.png);
+  background-repeat: no-repeat;
+  border-radius: 0px;
 }
 
 .contacts .container {
