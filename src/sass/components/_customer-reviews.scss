@@ -55,19 +55,14 @@
   color: $blackColor;
 
   &::before {
-    //position: absolute;
     display: block;
-    margin: 30px auto;
     content: '';
-    width: 26px;
-    height: 6px;
+    width: 54px;
+    height: 40px;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(../images/quotes.png);
-
-    background: $footerBorderColor;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: rotate(-190deg);
+    background-color: transparent;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/quotes@2x.png);
@@ -123,6 +118,8 @@
     background-image: url(/images/home.png);
     background-repeat: no-repeat;
     border-radius: 0px;
+    background-color: transparent;
+    background-position: center;
   }
 }
 
