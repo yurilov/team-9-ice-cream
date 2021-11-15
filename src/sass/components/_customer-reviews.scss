@@ -130,3 +130,16 @@
     border-radius: 0px;
   }
 }
+
+.slide-text-description__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-text-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  color: $blackColor;
+}
