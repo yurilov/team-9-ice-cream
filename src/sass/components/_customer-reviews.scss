@@ -3,12 +3,12 @@
   padding-top: 125px;
   padding-bottom: 98px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 122px;
     padding-bottom: 112px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 127px;
     padding-bottom: 119px;
   }
@@ -32,6 +32,12 @@
     background-size: contain;
     width: 85px;
     height: 85px;
+    @media screen and (min-width: $tablet) {
+      background-image: url(../images/customer1@2x.png);
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/customer1@2x.png);
+    }
   }
 }
 
@@ -55,9 +61,7 @@
   color: $blackColor;
 
   &::before {
-    //position: absolute;
     display: block;
-    margin: 30px auto;
     content: '';
     width: 26px;
     height: 6px;
@@ -67,7 +71,7 @@
 
     background: $footerBorderColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: rotate(-190deg);
+    // transform: rotate(-190deg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/quotes@2x.png);
@@ -120,6 +124,7 @@
   }
 
   li.slick-active button {
+    display: block;
     background-image: url(/images/home.png);
     background-repeat: no-repeat;
     border-radius: 0px;
