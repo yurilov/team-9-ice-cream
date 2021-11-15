@@ -913,8 +913,21 @@ body.buy-modal-open,
 
 .customer-reviews {
   padding-top: 125px;
-  margin-bottom: 20px;
-  background-position: 0 766px;
+  padding-bottom: 98px;
+}
+
+@media screen and (min-width: 767px) {
+  .customer-reviews {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .customer-reviews {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 }
 
 .customer-reviews .container {
@@ -940,11 +953,12 @@ body.buy-modal-open,
           align-items: center;
   margin-left: auto;
   margin-right: auto;
+  background-size: contain;
   width: 85px;
   height: 85px;
 }
 
-.slide-text {
+.slide-text-reviewer {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -952,6 +966,52 @@ body.buy-modal-open,
   line-height: 30.6px;
   text-align: center;
   color: #000000;
+}
+
+.slide-text-description {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30.6px;
+  text-align: center;
+  color: #000000;
+}
+
+.slide-text-description::before {
+  display: block;
+  margin: 30px auto;
+  content: 'test';
+  width: 26px;
+  height: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/quotes.png);
+  color: #c7133e;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .slide-text-description::before {
+    background-image: url(../images/quotes@2x.png);
+  }
+}
+
+.slide-text-description::after {
+  display: block;
+  margin: 30px auto;
+  content: '';
+  width: 26px;
+  height: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/dots.png);
+  color: #c7133e;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .slide-text-description::after {
+    background-image: url(../images/dots@2x.png);
+  }
 }
 
 .slide-ellipse {
@@ -991,23 +1051,6 @@ body.buy-modal-open,
   background-image: url(/images/home.png);
   background-repeat: no-repeat;
   border-radius: 0px;
-}
-
-.slide-span::after {
-  display: block;
-  margin: 30px auto;
-  content: '';
-  width: 26px;
-  height: 6px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: #c7133e;
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .slide-span::after {
-    background-image: url(../images/dots@2x.png);
-  }
 }
 
 .contacts {

@@ -1,7 +1,21 @@
 .customer-reviews {
+  //background-color: $whiteColor;
+  // margin-bottom: 20px;
+  // background-position: 0 766px;
+
   padding-top: 125px;
-  margin-bottom: 20px;
-  background-position: 0 766px;
+  padding-bottom: 98px;
+
+  @media screen and (min-width: 767px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+
   & .container {
     padding-left: 50px;
     padding-right: 50px;
@@ -23,12 +37,13 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    background-size: contain;
     width: 85px;
     height: 85px;
   }
 }
 
-.slide-text {
+.slide-text-reviewer {
   font-family: $mainFont;
   font-style: normal;
   font-weight: 500;
@@ -36,6 +51,48 @@
   line-height: 30.6px;
   text-align: center;
   color: $blackColor;
+}
+
+.slide-text-description {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30.6px;
+  text-align: center;
+  color: $blackColor;
+
+  &::before {
+    display: block;
+    margin: 30px auto;
+    content: 'test';
+    width: 26px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/quotes.png);
+    color: #c7133e;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/quotes@2x.png);
+    }
+  }
+
+  &::after {
+    display: block;
+    margin: 30px auto;
+    content: '';
+    width: 26px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/dots.png);
+    color: #c7133e;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/dots@2x.png);
+    }
+  }
 }
 
 .slide-ellipse {
@@ -70,21 +127,5 @@
     background-image: url(/images/home.png);
     background-repeat: no-repeat;
     border-radius: 0px;
-  }
-}
-
-.slide-span::after {
-  display: block;
-  margin: 30px auto;
-  content: '';
-  width: 26px;
-  height: 6px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  //background-image: url(../images/dots.png);
-  color: #c7133e;
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/dots@2x.png);
   }
 }
