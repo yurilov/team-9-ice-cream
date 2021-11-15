@@ -1,17 +1,14 @@
 .customer-reviews {
-  //background-color: $whiteColor;
-  // margin-bottom: 20px;
-  // background-position: 0 766px;
-
+  background-color: $whiteColor;
   padding-top: 125px;
   padding-bottom: 98px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 122px;
     padding-bottom: 112px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 127px;
     padding-bottom: 119px;
   }
@@ -81,8 +78,8 @@
     display: block;
     margin: 30px auto;
     content: '';
-    width: 26px;
-    height: 6px;
+    width: 54px;
+    height: 40px;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(../images/dots-customer-review.png);
@@ -127,4 +124,17 @@
     background-repeat: no-repeat;
     border-radius: 0px;
   }
+}
+
+.slide-text-description__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-text-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  color: $blackColor;
 }
