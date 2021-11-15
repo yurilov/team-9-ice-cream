@@ -105,6 +105,14 @@
     text-align: center;
     text-transform: uppercase;
     color: $whiteColor;
+    transform: translateY(-220%);
+    transition: all 1.5s ease 0s;
+    opacity: 0;
+  }
+
+  &__heading.element-show {
+    transform: translateY(0);
+    opacity: 1;
   }
 
   &__heading::after {
