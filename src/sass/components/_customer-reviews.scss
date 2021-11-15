@@ -22,15 +22,10 @@
   }
 }
 
-.slider {
-  width: 40rem;
-}
-
 .slide {
   img {
     position: relative;
     display: block;
-    min-width: 120px;
     max-width: 100%;
     height: auto;
     justify-content: center;
@@ -90,11 +85,11 @@
     height: 6px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(../images/dots.png);
+    background-image: url(../images/dots-customer-review.png);
     color: #c7133e;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/dots@2x.png);
+      background-image: url(../images/dots-customer-review.png);
     }
   }
 }
