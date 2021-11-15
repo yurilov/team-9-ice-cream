@@ -33,10 +33,10 @@
     width: 85px;
     height: 85px;
     @media screen and (min-width: $tablet) {
-      background-image: url(../images/customer1@2x.png);
+      background-image: url(../images/tablet/testimonials-tablet.png);
     }
     @media screen and (min-width: $desktop) {
-      background-image: url(../images/customer1@2x.png);
+      background-image: url(../images/desktop/testimonials-desktop@2x.png);
     }
   }
 }
