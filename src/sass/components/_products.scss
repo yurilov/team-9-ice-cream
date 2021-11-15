@@ -105,7 +105,15 @@
     text-align: center;
     text-transform: uppercase;
     color: $whiteColor;
+    // transform: translateY(-220%);
+    // transition: all 1.5s ease 0s;
+    // opacity: 0;
   }
+
+  // &__heading.element-show {
+  //   transform: translateY(0);
+  //   opacity: 1;
+  // }
 
   &__heading::after {
     display: block;
@@ -191,6 +199,15 @@
 }
 
 .product-card--cream {
+  transform: translate(-50px, 50px);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  &.element-show {
+    transform: translate(0);
+    opacity: 1;
+  }
+
   background-color: $heroBg;
 
   &::before {
@@ -224,6 +241,15 @@
 }
 
 .product-card--coffee {
+  transform: translateY(50px);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  &.element-show {
+    transform: translate(0);
+    opacity: 1;
+  }
+
   background-color: $iceCoffeBg;
 
   &::before {
@@ -256,7 +282,16 @@
   }
 }
 
-.product-card--milkshakes {
+.product-card--milkshake {
+  transform: translate(50px, 50px);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  &.element-show {
+    transform: translate(0);
+    opacity: 1;
+  }
+
   background-color: $milkshakesBg;
 
   &::before {
@@ -323,7 +358,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-
+  background-color: $whiteColor;
   cursor: pointer;
 }
 
