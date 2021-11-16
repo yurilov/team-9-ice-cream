@@ -64,6 +64,8 @@
   border: none;
   background-color: $whiteColor;
   cursor: pointer;
+  transition: background-color $transition-duration $timing-function;
+
   @include font(16px, 21px, 500);
   @media screen and (max-width: 767px) {
     display: none;
