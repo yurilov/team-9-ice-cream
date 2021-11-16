@@ -23,4 +23,4 @@ document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click"
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/modal.js"),require("./js/animation.js"),require("./js/franchise-modal.js"),require("./js/buy-modal.js"),require("./js/recipe-modal.js"),require("./js/flip.js"),require("./js/back-to-top.js"),require("./js/menu.js"),require("./js/slick.js"),require("./js/smooth-scroll.js");
 },{"./sass/main.scss":"clu1","./js/modal.js":"RSqK","./js/animation.js":"C1P0","./js/franchise-modal.js":"CL4D","./js/buy-modal.js":"srHc","./js/recipe-modal.js":"aDeC","./js/flip.js":"z9QZ","./js/back-to-top.js":"EZ65","./js/menu.js":"i0CD","./js/slick.js":"cDEs","./js/smooth-scroll.js":"NcjB"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-9-ice-cream/src.ab03366c.js.map
+//# sourceMappingURL=/team-9-ice-cream/src.7b341595.js.map
