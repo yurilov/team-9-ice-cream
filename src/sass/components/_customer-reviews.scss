@@ -14,8 +14,15 @@
   }
 
   & .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    @media screen and (min-width: $tablet) {
+      padding-left: 74px;
+      padding-right: 74px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 178px;
+      padding-right: 178px;
+    }
   }
 }
 
@@ -32,60 +39,90 @@
     background-size: contain;
     width: 85px;
     height: 85px;
+    margin-bottom: 29px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 19px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .slide__reviewer {
   font-family: $mainFont;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 30.6px;
+  @include font(14px, 1.86, 500, 0);
   text-align: center;
   color: $blackColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
+
+  &::before {
+    display: block;
+    margin: 30px auto 18px;
+
+    @media screen and (min-width: $tablet) {
+      margin: 24px auto 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin: 15px auto;
+    }
+
+    content: '...';
+    width: 54px;
+    height: 40px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+
+    color: #c7133e;
+  }
 }
 
 .slide__wrapper {
   position: relative;
   overflow: hidden;
-}
+  width: 100%;
+  background-color: $reviewBg;
+  padding: 43px 66px 26px 57px;
 
-.slide__text-description {
-  font-family: $mainFont;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 31px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  color: $blackColor;
-
-  background-image: repeating-linear-gradient(
-    transparent,
-    transparent 29px,
-    #e1e1e1 1px,
-    #e1e1e1 30px
-  );
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    background-color: #fafafa66;
+  }
 
   @media screen and (min-width: $tablet) {
-    line-height: calc(30 / 14);
-    letter-spacing: 0.04em;
+    padding: 30px 36px 28px 40px;
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: repeating-linear-gradient(
-      transparent,
-      transparent 28px,
-      rgb(225, 225, 225) 1px,
-      rgb(225, 225, 225) 29px
-    );
-    line-height: calc(30 / 16);
-    letter-spacing: 0.04em;
+    padding: 54px 89px 39px 59px;
   }
 
   &::before {
     display: block;
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    @media screen and (min-width: $tablet) {
+      top: 30px;
+      left: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 32px;
+      left: 50px;
+    }
+
+    z-index: 0;
     content: '';
     width: 54px;
     height: 40px;
@@ -98,21 +135,45 @@
       background-image: url(../images/quotes@2x.png);
     }
   }
+}
 
-  &::after {
-    display: block;
-    margin: 30px auto;
-    content: '';
-    width: 54px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../images/dots-customer-review.png);
-    color: #c7133e;
+.slide__text-description {
+  position: relative;
+  z-index: 1;
+  @include font(12px, 2.55, 500, 0.03em);
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/dots-customer-review.png);
-    }
+  text-align: center;
+
+  color: $blackColor;
+
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    #e1e1e1 1px,
+    #e1e1e1 30px
+  );
+
+  @media screen and (min-width: $tablet) {
+    @include font(14px, 2.16);
+    background-image: repeating-linear-gradient(
+      transparent,
+      transparent 28px,
+      rgb(225, 225, 225) 1px,
+      rgb(225, 225, 225) 29px
+    );
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: repeating-linear-gradient(
+      transparent,
+      transparent 28px,
+      rgb(225, 225, 225) 1px,
+      rgb(225, 225, 225) 29px
+    );
+    @include font(16px, 1.86);
+
+    padding-left: 28px;
+    padding-right: 35px;
   }
 }
 
@@ -125,7 +186,10 @@
   justify-content: center;
 
   margin: 0;
-  padding: 1rem 0;
+  padding: 30px 0 0;
+  @media screen and (min-width: $tablet) {
+    padding: 35px 0 0;
+  }
 
   list-style-type: none;
 
