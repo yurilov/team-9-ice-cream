@@ -93,18 +93,18 @@
   overflow: hidden;
   width: 100%;
   background-color: $reviewBg;
-  padding: 43px 66px 26px 57px;
+  padding: 43px 50px 20px 50px;
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     background-color: #fafafa66;
   }
 
   @media screen and (min-width: $tablet) {
-    padding: 30px 36px 28px 40px;
+    padding: 47px 36px 28px 36px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 54px 89px 39px 59px;
+    padding: 47px 54px 32px 50px;
   }
 
   &::before {
@@ -145,7 +145,8 @@
   text-align: center;
 
   color: $blackColor;
-
+  padding-left: 7px;
+  padding-right: 16px;
   background-image: repeating-linear-gradient(
     transparent,
     transparent 29px,
@@ -161,6 +162,9 @@
       rgb(225, 225, 225) 1px,
       rgb(225, 225, 225) 29px
     );
+
+    padding-left: 20px;
+    padding-right: 44px;
   }
 
   @media screen and (min-width: $desktop) {
