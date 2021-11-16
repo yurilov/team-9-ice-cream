@@ -188,6 +188,7 @@
 .contacts__link {
   @include font(12px, 1.5, 500, 0);
   color: $primaryTextColor;
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $accentColor;
@@ -243,6 +244,7 @@
   padding-left: 21px;
   color: $whiteColor;
   background-color: $btnRedBg;
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $accentColor;
@@ -262,6 +264,7 @@
   padding-left: 35px;
   color: $accentColor;
   background-color: $whiteColor;
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $btnLightHover;
