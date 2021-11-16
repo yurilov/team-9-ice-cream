@@ -188,10 +188,10 @@
 .contacts__link {
   @include font(12px, 1.5, 500, 0);
   color: $primaryTextColor;
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $accentColor;
-    transition: color $timing-function $transition-duration;
   }
   @media screen and (min-width: $tablet) {
     @include font(14px, 1.83, 500, 0);
@@ -244,10 +244,10 @@
   padding-left: 21px;
   color: $whiteColor;
   background-color: $btnRedBg;
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $accentColor;
-    transition: background-color $timing-function $transition-duration;
   }
   @media screen and (min-width: $tablet) {
     padding-right: 53px;
@@ -264,10 +264,10 @@
   padding-left: 35px;
   color: $accentColor;
   background-color: $whiteColor;
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $btnLightHover;
-    transition: background-color $timing-function $transition-duration;
   }
   @media screen and (min-width: $tablet) {
     padding-right: 59px;
