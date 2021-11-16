@@ -19,11 +19,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 342px;
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/desktop/about-bg-desktop@2x.png);
-        }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/about-bg-desktop@2x.png);
+    }
   }
 }
 
@@ -32,6 +30,7 @@
   font-family: $tittleFont;
   @include font(18px, 1.14, 400);
   text-align: center;
+  text-transform: uppercase;
   color: $preTittleColor;
 
   @media (min-width: 768px) and (max-width: 1279px) {
