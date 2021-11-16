@@ -25,19 +25,30 @@
 
   @media screen and (min-width: $tablet) {
     padding-top: 102px;
-    padding-bottom: 173px;
+    padding-bottom: 19px;
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 171px;
-    padding-bottom: 292px;
+    padding-bottom: 56px;
+  }
+
+  & .container {
+    @media screen and (min-width: $tablet) {
+      padding-left: 34px;
+      padding-right: 34px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 77px;
+      padding-right: 97px;
+    }
   }
 }
 
 .hero__tittle {
   max-width: 218px;
   font-family: $tittleFont;
-  font-style: normal;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
@@ -87,8 +98,6 @@
   display: flex;
 }
 .hero__btn {
-  font-family: $mainFont;
-  font-style: normal;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
@@ -122,6 +131,7 @@
 .hero__btn--ptimary {
   color: $whiteColor;
   background: $accentColor;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -132,6 +142,7 @@
 .hero__btn--secondary {
   color: $accentColor;
   background: $whiteColor;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
