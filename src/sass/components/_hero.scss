@@ -1,36 +1,49 @@
-// .hero {
-//   background-color: $heroBg;
-//   padding-top: 193px;
-//   padding-bottom: 160px;
-
-//   &__tittle {
-//     font-family: $tittleFont;
-//     @include font(38px, (44/38));
-//     color: $whiteColor;
-//     text-transform: uppercase;
-
-//     &--red {
-//       color: $accentColor;
-//       @include font(58px, 0.905);
-//     }
-//   }
-// }
-
-/*--- Hero header ---*/
+/*--- Hero ---*/
 
 .hero {
   background-color: $heroBg;
+  background-image: url(/images/mobile/hero-icecream-mobile.png),
+    url(/images/mobile/hero-circle-mobile.png);
+  background-repeat: no-repeat;
+  background-position: right 32px bottom 0, right 0 bottom 75px;
+  background-size: 171px, 284px;
+
   padding-top: 193px;
   padding-bottom: 160px;
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/mobile/hero-icecream-mobile@2x.png),
+      url(/images/mobile/hero-circle-mobile@2x.png);
+  }
+
   @media screen and (min-width: $tablet) {
+    background-image: url(/images/tablet/hero-icecream-tablet.png),
+      url(/images/tablet/hero-circle-tablet.png);
+    background-position: right 247px bottom 0, right 137px bottom 46px;
+    background-size: 143px, 324px;
+
     padding-top: 102px;
     padding-bottom: 28px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/tablet/hero-icecream-tablet@2x.png),
+        url(/images/tablet/hero-circle-tablet@2x.png);
+    }
   }
 
   @media screen and (min-width: $desktop) {
+    background-image: url(/images/desktop/hero-icecream-desktop.png),
+      url(/images/desktop/hero-circle-desktop.png);
+    background-position: right 450px bottom 0, right 267px bottom 75px;
+    background-size: 236px, 538px;
+
     padding-top: 171px;
     padding-bottom: 45px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/desktop/hero-icecream-desktop@2x.png),
+        url(/images/desktop/hero-circle-desktop@2x.png);
+    }
   }
 
   & .container {
