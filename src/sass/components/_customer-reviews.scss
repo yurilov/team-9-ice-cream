@@ -78,22 +78,27 @@
       background-image: url(../images/quotes@2x.png);
     }
   }
-}
 
-.slide-text-description-dots {
-  &::after {
-    display: block;
-    margin: 30px auto;
-    content: '';
-    width: 54px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../images/dots-customer-review.png);
-    color: #c7133e;
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  &-dots {
+    &::after {
+      display: block;
+      margin: 30px auto;
+      content: '';
+      width: 54px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: contain;
       background-image: url(../images/dots-customer-review.png);
+      color: #c7133e;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/dots-customer-review.png);
+      }
     }
   }
 }
@@ -133,9 +138,4 @@
     background-color: transparent;
     background-position: center;
   }
-}
-
-.slide-text-description__wrapper {
-  position: relative;
-  overflow: hidden;
 }
