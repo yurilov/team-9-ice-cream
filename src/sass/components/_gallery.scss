@@ -1,0 +1,10 @@
+.gallery {
+  background-image: linear-gradient($secondaryBg 0% 40.16%, $whiteColor 40.16% 100%);
+
+  & .container {
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+  }
+}
