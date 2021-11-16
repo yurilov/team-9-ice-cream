@@ -191,6 +191,7 @@
   &:hover,
   &:focus {
     color: $accentColor;
+    transition: color $timing-function $transition-duration;
   }
   @media screen and (min-width: $tablet) {
     @include font(14px, 1.83, 500, 0);
@@ -246,6 +247,7 @@
   &:hover,
   &:focus {
     background-color: $accentColor;
+    transition: background-color $timing-function $transition-duration;
   }
   @media screen and (min-width: $tablet) {
     padding-right: 53px;
@@ -265,6 +267,7 @@
   &:hover,
   &:focus {
     background-color: $btnLightHover;
+    transition: background-color $timing-function $transition-duration;
   }
   @media screen and (min-width: $tablet) {
     padding-right: 59px;
