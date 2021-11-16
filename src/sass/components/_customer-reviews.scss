@@ -45,6 +45,11 @@
   color: $blackColor;
 }
 
+.slide__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .slide-text-description {
   font-family: $mainFont;
   font-style: normal;
@@ -92,11 +97,6 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/quotes@2x.png);
     }
-  }
-
-  &__wrapper {
-    position: relative;
-    overflow: hidden;
   }
 
   &-dots {
