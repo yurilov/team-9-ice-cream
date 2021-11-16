@@ -25,12 +25,12 @@
 
   @media screen and (min-width: $tablet) {
     padding-top: 102px;
-    padding-bottom: 19px;
+    padding-bottom: 28px;
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 171px;
-    padding-bottom: 56px;
+    padding-bottom: 45px;
   }
 
   & .container {
@@ -96,6 +96,14 @@
 
 .hero__buttons {
   display: flex;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 56px;
+  }
 }
 .hero__btn {
   font-weight: 400;
@@ -147,5 +155,76 @@
   &:hover,
   &:focus {
     background: $btnLightHover;
+  }
+}
+
+/*---Milk-and-text---*/
+
+.hero__milk-and-text {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: -38px;
+  }
+}
+
+.hero__text-and-btn {
+  margin-left: -4px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
+}
+
+.hero__text {
+  max-width: 114px;
+  margin-top: 47px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* or 12px */
+
+  color: $whiteColor;
+  margin-bottom: 7px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 200px;
+    margin-top: 56px;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    margin-bottom: 20px;
+  }
+}
+
+.hero__milk-card-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  @media screen and (min-width: $desktop) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero__icon {
+  width: 5px;
+  height: 5px;
+  fill: $accentColor;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    width: 8px;
+    height: 8px;
   }
 }
