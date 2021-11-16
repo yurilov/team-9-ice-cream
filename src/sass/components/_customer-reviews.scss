@@ -50,19 +50,34 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 30.6px;
+  line-height: 31px;
   text-align: center;
-  font-weight: normal;
   font-size: 18px;
-  line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: $blackColor;
+
   background-image: repeating-linear-gradient(
     transparent,
     transparent 29px,
     #e1e1e1 1px,
     #e1e1e1 30px
   );
+
+  @media screen and (min-width: $tablet) {
+    line-height: calc(30 / 14);
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: repeating-linear-gradient(
+      transparent,
+      transparent 28px,
+      rgb(225, 225, 225) 1px,
+      rgb(225, 225, 225) 29px
+    );
+    line-height: calc(30 / 16);
+    letter-spacing: 0.04em;
+  }
 
   &::before {
     display: block;
