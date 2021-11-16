@@ -1,17 +1,140 @@
+// .hero {
+//   background-color: $heroBg;
+//   padding-top: 193px;
+//   padding-bottom: 160px;
+
+//   &__tittle {
+//     font-family: $tittleFont;
+//     @include font(38px, (44/38));
+//     color: $whiteColor;
+//     text-transform: uppercase;
+
+//     &--red {
+//       color: $accentColor;
+//       @include font(58px, 0.905);
+//     }
+//   }
+// }
+
+/*--- Hero header ---*/
+
 .hero {
   background-color: $heroBg;
   padding-top: 193px;
   padding-bottom: 160px;
 
-  &__tittle {
-    font-family: $tittleFont;
-    @include font(38px, (44/38));
-    color: $whiteColor;
-    text-transform: uppercase;
+  @media screen and (min-width: $tablet) {
+    padding-top: 102px;
+    padding-bottom: 173px;
+  }
 
-    &--red {
-      color: $accentColor;
-      @include font(58px, 0.905);
-    }
+  @media screen and (min-width: $desktop) {
+    padding-top: 171px;
+    padding-bottom: 292px;
+  }
+}
+
+.hero__tittle {
+  max-width: 218px;
+  font-family: $tittleFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $whiteColor;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 162px;
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 277px;
+    font-size: 38px;
+    line-height: 1.16;
+    margin-bottom: 25px;
+  }
+}
+
+.hero__tittle--red {
+  font-size: 48px;
+  line-height: 96.5%;
+  /* or 46px */
+
+  color: $accentColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+    line-height: 90.5%;
+    /* or 31px */
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: 90.5%;
+    /* or 52px */
+  }
+}
+
+/*--- Hero btn ---*/
+
+.hero__buttons {
+  display: flex;
+}
+.hero__btn {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 20px;
+
+  padding: 7px 14px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 12px 22px;
+  }
+}
+
+.hero__btn + .hero__btn {
+  margin-left: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 15px;
+  }
+}
+
+.hero__btn--ptimary {
+  color: $whiteColor;
+  background: $accentColor;
+
+  &:hover,
+  &:focus {
+    background: #c7133e;
+  }
+}
+
+.hero__btn--secondary {
+  color: $accentColor;
+  background: $whiteColor;
+
+  &:hover,
+  &:focus {
+    background: $btnLightHover;
   }
 }
