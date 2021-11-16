@@ -1,3 +1,39 @@
+//--- Section Hero
+
+.hero__tittle {
+  transform: translate(-88%, 0);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  &.element-show {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.hero__btn--ptimary {
+  @media screen and (min-width: 768px) {
+    transform: translate(0, 80px);
+    opacity: 0;
+
+    &.element-show {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+}
+
+.hero__btn--secondary {
+  @media screen and (min-width: 768px) {
+    transform: translate(0, 80px);
+    opacity: 0;
+
+    &.element-show {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+}
 //--- Section Product
 
 .product__title,
