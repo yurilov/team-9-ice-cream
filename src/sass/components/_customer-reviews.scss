@@ -150,6 +150,7 @@
     border-radius: 0px;
     background-color: transparent;
     background-position: center;
+    background-size: contain;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/home@2x.png);
