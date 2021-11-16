@@ -8,3 +8,4 @@ import './js/flip.js';
 import './js/back-to-top.js';
 import './js/menu.js';
 import './js/slick.js';
+import './js/smooth-scroll.js'
