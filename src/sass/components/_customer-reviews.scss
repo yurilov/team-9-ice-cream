@@ -52,7 +52,17 @@
   font-size: 12px;
   line-height: 30.6px;
   text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
   color: $blackColor;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    #e1e1e1 1px,
+    #e1e1e1 30px
+  );
 
   &::before {
     display: block;
@@ -68,7 +78,9 @@
       background-image: url(../images/quotes@2x.png);
     }
   }
+}
 
+.slide-text-description-dots {
   &::after {
     display: block;
     margin: 30px auto;
@@ -126,12 +138,4 @@
 .slide-text-description__wrapper {
   position: relative;
   overflow: hidden;
-}
-
-.slide-text-description {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  letter-spacing: 0.03em;
-  color: $blackColor;
 }
