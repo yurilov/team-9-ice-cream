@@ -99,21 +99,19 @@
     }
   }
 
-  &-dots {
-    &::after {
-      display: block;
-      margin: 30px auto;
-      content: '';
-      width: 54px;
-      height: 40px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-image: url(../images/dots-customer-review.png);
-      color: #c7133e;
+  &::after {
+    display: block;
+    margin: 30px auto;
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/dots-customer-review.png);
+    color: #c7133e;
 
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/dots-customer-review.png);
-      }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/dots-customer-review.png);
     }
   }
 }
