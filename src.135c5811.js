@@ -15,7 +15,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"EZ65":[function(require,module,exports) {
 var o=$("#back-to-top");$(window).scroll(function(){$(window).scrollTop()>300?o.addClass("show"):o.removeClass("show")}),o.on("click",function(o){o.preventDefault(),$("html, body").animate({scrollTop:0},"300")});
 },{}],"i0CD":[function(require,module,exports) {
-(()=>{const e=document.querySelector(".js-menu-container"),n=document.querySelector(".js-open-menu"),t=document.querySelector(".js-close-menu"),o=()=>{const t="true"===n.getAttribute("aria-expanded")||!1;n.setAttribute("aria-expanded",!t),e.classList.toggle("is-open"),bodyScrollLock[t?"enableBodyScroll":"disableBodyScroll"](document.body)};n.addEventListener("click",o),t.addEventListener("click",o),window.matchMedia("(min-width: 1280px)").addEventListener("change",t=>{t.matches&&(e.classList.remove("is-open"),n.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})(),jQuery(document).on("click",".menu-nav__link",function(){jQuery(".menu-nav__link").closest(".js-menu-container").removeClass("is-open").hide()});
+(()=>{const e=document.querySelector(".js-menu-container"),n=document.querySelector(".js-open-menu"),t=document.querySelector(".js-close-menu"),o=()=>{const t="true"===n.getAttribute("aria-expanded")||!1;n.setAttribute("aria-expanded",!t),e.classList.toggle("is-open"),bodyScrollLock[t?"enableBodyScroll":"disableBodyScroll"](document.body)};n.addEventListener("click",o),t.addEventListener("click",o),window.matchMedia("(min-width: 1280px)").addEventListener("change",t=>{t.matches&&(e.classList.remove("is-open"),n.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})(),jQuery(document).on("click",".menu-nav__link",function(){jQuery(".menu-nav__link").closest(".js-menu-container").removeClass("is-open")});
 },{}],"cDEs":[function(require,module,exports) {
 $(".slider").slick({infinite:!0,dots:!0,arrows:!1});
 },{}],"NcjB":[function(require,module,exports) {
@@ -23,4 +23,4 @@ document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click"
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/modal.js"),require("./js/animation.js"),require("./js/franchise-modal.js"),require("./js/buy-modal.js"),require("./js/recipe-modal.js"),require("./js/flip.js"),require("./js/back-to-top.js"),require("./js/menu.js"),require("./js/slick.js"),require("./js/smooth-scroll.js");
 },{"./sass/main.scss":"clu1","./js/modal.js":"RSqK","./js/animation.js":"C1P0","./js/franchise-modal.js":"CL4D","./js/buy-modal.js":"srHc","./js/recipe-modal.js":"aDeC","./js/flip.js":"z9QZ","./js/back-to-top.js":"EZ65","./js/menu.js":"i0CD","./js/slick.js":"cDEs","./js/smooth-scroll.js":"NcjB"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-9-ice-cream/src.3827f702.js.map
+//# sourceMappingURL=/team-9-ice-cream/src.135c5811.js.map
