@@ -35,8 +35,7 @@
   background-color: $secondaryBg;
   background-image: url(/images/funny-cow@1x.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/funny-cow@2x.png),
-      linear-gradient($whiteColor 0% 13.5%, $secondaryBg 13.5% 100%);
+    background-image: url(/images/funny-cow@2x.png);
   }
   background-repeat: no-repeat;
   background-size: 300px;
