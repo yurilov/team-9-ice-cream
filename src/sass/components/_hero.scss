@@ -215,7 +215,9 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-
+  cursor: pointer;
+  background-color: $whiteColor;
+  
   @media screen and (min-width: $desktop) {
     width: 26px;
     height: 26px;
@@ -228,7 +230,7 @@
   fill: $accentColor;
   display: block;
   margin: auto;
-  cursor: pointer;
+  
 
   @media screen and (min-width: $desktop) {
     width: 8px;
