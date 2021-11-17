@@ -30,5 +30,5 @@
 
 jQuery(document).on("click",".menu-nav__item", function(){
 
-    jQuery(".menu-nav__item").closest(".menu-nav").removeClass("is-open").hide();
+    jQuery(".menu-nav__item").closest(".menu-backdrop").removeClass("is-open").hide();
 });
