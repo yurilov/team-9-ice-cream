@@ -28,6 +28,10 @@
   position: relative;
   background-color: $secondaryBg;
   background-image: url(/images/funny-cow@1x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/funny-cow@2x.png),
+      linear-gradient($whiteColor 0% 13.5%, $secondaryBg 13.5% 100%);
+  }
   background-repeat: no-repeat;
   background-size: 300px;
   background-position: bottom left;
@@ -120,7 +124,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  padding-left: 20px;
+  padding-left: 40px;
   color: $accentColor;
   cursor: pointer;
   transition-property: border;
