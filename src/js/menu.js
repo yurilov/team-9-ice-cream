@@ -30,5 +30,10 @@
 
 jQuery(document).on("click",".menu-nav__link", function(){
 
-    jQuery(".menu-nav__link").closest(".js-menu-container").removeClass("is-open");
+  jQuery(".menu-nav__link").closest(".js-menu-container").removeClass("is-open");
+});
+
+jQuery(document).on("click",".menu-btn", function(){
+
+  jQuery(".menu-btn").closest(".js-menu-container").removeClass("is-open");
 });
