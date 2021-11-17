@@ -17,18 +17,25 @@
 }
 
 .recipe-modal {
+  background-image: url(../images/cow-modal-bg@1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/cow-modal-bg@2x.png);
+  }
   @media screen and (max-width: 479px) {
     width: 95vw;
     height: 80vh;
-    padding-top: 40px;
+    padding-top: 200px;
   }
 
   position: relative;
-  background-color: $mainBg;
+  background-color: $secondaryBg;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding-top: 40px;
+  border-radius: 6px;
+  padding-top: 200px;
 
   transform: rotate(720deg) scale(1);
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,6 +48,7 @@
   @media screen and (min-width: 1280px) {
     width: 500px;
     height: 600px;
+    padding-top: 230px;
   }
 }
 
@@ -75,14 +83,32 @@
 }
 
 .recipe-modal__title {
+  position: absolute;
+  top: 6%;
+  left: 33%;
+  width: 180px;
   font-family: $tittleFont;
-  font-size: 24px;
+  
+  font-size: 16px;
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: $preTittleColor;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    top: 12%;
+    left: 40%;
+    width: 200px;
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 15%;
+    left: 38%;
+    width: 250px;
+    font-size: 24px;
+  }
 }
 
 .recipe-modal__content-box {
