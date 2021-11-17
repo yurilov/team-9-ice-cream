@@ -14,7 +14,7 @@
 }
 
 .backdrop.is-hidden .buy-modal {
-  transform: scale(0.1);
+  transform: translateY(-100%) rotateZ(90deg);
 }
 
 .buy-modal {
@@ -22,7 +22,7 @@
     width: 100vw;
     margin-right: 10px;
     margin-left: 10px;
-    background-size: 250px;
+    background-size: 200px;
   }
 
   position: relative;
@@ -40,6 +40,7 @@
   padding: 40px;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
@@ -157,7 +158,10 @@
 
 .buy-modal__comment {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 43px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 70px;
+  }
   min-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -251,15 +255,23 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: $accentColor;
   border-radius: 22px;
-  padding: 14px 28px;
+  padding: 0px 28px;
   height: 44px;
   margin-left: auto;
   margin-right: 0;
+  color: $whiteColor;
+  @media screen and (max-width: 479px) {
+    padding: 0px 32px;
+  }
+  &:hover,
+  :focus {
+    background-color: $whiteColor;
+    color: $accentColor;
+  }
 }
 
 .buy-modal__button-text {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.3;
-  color: $whiteColor;
 }

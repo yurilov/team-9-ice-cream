@@ -2,6 +2,10 @@
 
 .hero {
   background-color: $heroBg;
+}
+
+.hero__container {
+  position: relative;
   background-image: url(/images/mobile/hero-icecream-mobile.png),
     url(/images/mobile/hero-circle-mobile.png);
   background-repeat: no-repeat;
@@ -43,18 +47,6 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/desktop/hero-icecream-desktop@2x.png),
         url(/images/desktop/hero-circle-desktop@2x.png);
-    }
-  }
-
-  & .container {
-    @media screen and (min-width: $tablet) {
-      padding-left: 34px;
-      padding-right: 34px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      padding-left: 77px;
-      padding-right: 97px;
     }
   }
 }
@@ -223,7 +215,9 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-
+  cursor: pointer;
+  background-color: $whiteColor;
+  
   @media screen and (min-width: $desktop) {
     width: 26px;
     height: 26px;
@@ -236,10 +230,100 @@
   fill: $accentColor;
   display: block;
   margin: auto;
-  cursor: pointer;
+  
 
   @media screen and (min-width: $desktop) {
     width: 8px;
     height: 8px;
+  }
+}
+
+.hero__girl {
+  position: absolute;
+
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    right: 34px;
+    bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 109px;
+  }
+}
+
+.hero__list {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    top: 96px;
+    right: 44px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 156px;
+    right: 97px;
+  }
+}
+
+.hero__item + .hero__item {
+  margin-top: 13px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 15px;
+  }
+}
+
+.hero__item-number {
+  font-family: $tittleFont;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: $accentColor;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $whiteColor;
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    z-index: -1;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+    line-height: 1.15;
+    &::before {
+      width: 30px;
+      height: 30px;
+
+      top: -7px;
+      right: -15px;
+    }
+  }
+}
+
+.hero__item-text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: $whiteColor;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.28;
   }
 }
