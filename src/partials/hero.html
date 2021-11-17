@@ -1,13 +1,15 @@
 <section class="hero ">
   <div class="container hero__container">
-    <h1 class="hero__tittle element-animation">
-      ice cream made with
-      <span class="hero__tittle--red">passion</span>
-    </h1>
-    <div class="hero__buttons">
-      <a href="#products" class="hero__btn hero__btn--ptimary link element-animation">Products</a>
-      <a href="#about" class="hero__btn hero__btn--secondary link element-animation"
-        >How it’s made?</a>
+    <div class="hero__block">
+      <h1 class="hero__tittle element-animation">
+        ice cream made with
+        <span class="hero__tittle--red">passion</span>
+      </h1>
+      <div class="hero__buttons">
+        <a href="#products" class="hero__btn hero__btn--ptimary link element-animation">Products</a>
+        <a href="#about" class="hero__btn hero__btn--secondary link element-animation"
+          >How it’s made?</a>
+      </div>
     </div>
     <div class="hero__milk-and-text">
       <picture class="hero__milk">
@@ -36,15 +38,41 @@
         </button>
       </div>
     </div>
-      <picture class="hero__girl">
-        <source media="(min-width: 1280px)" 
-                srcset="/images/desktop/hero-girl-desktop.png 1x,
-                /images/desktop/hero-girl-desktop@2x.png 2x" />
-        <source media="(min-width: 768px)" 
-                srcset="/images/tablet/hero-girl-tablet.png 1x,
-                /images/tablet/hero-girl-tablet@2x.png 2x" />
-              <img src="/images/desktop/hero-girl-desktop.png" alt="Girl picture" />
-      </picture>
+          <picture class="hero__circle">
+            <source media="(min-width: 1280px)" 
+              srcset="/images/desktop/hero-circle-desktop.png 1x,
+                      /images/desktop/hero-circle-desktop@2x.png 2x" />
+            <source media="(min-width: 768px)" 
+              srcset="/images/tablet/hero-circle-tablet.png 1x,
+                      /images/tablet/hero-circle-tablet@2x.png 2x" />
+            <source media="(min-width: 320px), (max-width: 480px)" 
+              srcset="/images/mobile/hero-circle-mobile.png 1x,
+                      /images/mobile/hero-circle-mobile@2x.png 2x" />
+            <img src="/images/desktop/hero-circle-desktop.png" 
+                  alt="Circle picture" />
+          </picture>
+          <picture class="hero__ice-cream">
+            <source media="(min-width: 1280px)" 
+              srcset="/images/desktop/hero-icecream-desktop.png 1x,
+                      /images/desktop/hero-icecream-desktop@2x.png 2x" />
+            <source media="(min-width: 768px)" 
+              srcset="/images/tablet/hero-icecream-tablet.png 1x,
+                      /images/tablet/hero-icecream-tablet@2x.png 2x" />
+            <source media="(min-width: 320px), (max-width: 480px)" 
+              srcset="/images/mobile/hero-icecream-mobile.png 1x,
+                      /images/mobile/hero-icecream-mobile@2x.png 2x" />
+            <img src="/images/desktop/hero-icecream-desktop.png" 
+                  alt="Ice cream picture"/>
+          </picture>
+          <picture class="hero__girl">
+            <source media="(min-width: 1280px)" 
+              srcset="/images/desktop/hero-girl-desktop.png 1x,
+                      /images/desktop/hero-girl-desktop@2x.png 2x" />
+            <source media="(min-width: 768px)" 
+              srcset="/images/tablet/hero-girl-tablet.png 1x,
+                      /images/tablet/hero-girl-tablet@2x.png 2x" />
+                  <img src="/images/desktop/hero-girl-desktop.png" alt="Girl picture" />
+          </picture>
     <ul class="hero__list list">
       <li class="hero__item">
         <p class="hero__item-number">16</p>

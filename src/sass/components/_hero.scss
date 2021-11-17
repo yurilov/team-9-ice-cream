@@ -6,48 +6,48 @@
 
 .hero__container {
   position: relative;
-  background-image: url(/images/mobile/hero-icecream-mobile.png),
-    url(/images/mobile/hero-circle-mobile.png);
-  background-repeat: no-repeat;
-  background-position: right 32px bottom 0, right 0 bottom 75px;
-  background-size: 171px, 284px;
+  // background-image: url(/images/mobile/hero-icecream-mobile.png),
+  //   url(/images/mobile/hero-circle-mobile.png);
+  // background-repeat: no-repeat;
+  // background-position: right 32px bottom 0, right 0 bottom 75px;
+  // background-size: 171px, 284px;
 
   padding-top: 193px;
   padding-bottom: 160px;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/mobile/hero-icecream-mobile@2x.png),
-      url(/images/mobile/hero-circle-mobile@2x.png);
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(/images/mobile/hero-icecream-mobile@2x.png),
+  //     url(/images/mobile/hero-circle-mobile@2x.png);
+  // }
 
   @media screen and (min-width: $tablet) {
-    background-image: url(/images/tablet/hero-icecream-tablet.png),
-      url(/images/tablet/hero-circle-tablet.png);
-    background-position: right 247px bottom 0, right 137px bottom 46px;
-    background-size: 143px, 324px;
+    // background-image: url(/images/tablet/hero-icecream-tablet.png),
+    //   url(/images/tablet/hero-circle-tablet.png);
+    // background-position: right 247px bottom 0, right 137px bottom 46px;
+    // background-size: 143px, 324px;
 
     padding-top: 102px;
     padding-bottom: 28px;
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/tablet/hero-icecream-tablet@2x.png),
-        url(/images/tablet/hero-circle-tablet@2x.png);
-    }
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url(/images/tablet/hero-icecream-tablet@2x.png),
+    //     url(/images/tablet/hero-circle-tablet@2x.png);
+    // }
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url(/images/desktop/hero-icecream-desktop.png),
-      url(/images/desktop/hero-circle-desktop.png);
-    background-position: right 450px bottom 0, right 267px bottom 75px;
-    background-size: 236px, 538px;
+    // background-image: url(/images/desktop/hero-icecream-desktop.png),
+    //   url(/images/desktop/hero-circle-desktop.png);
+    // background-position: right 450px bottom 0, right 267px bottom 75px;
+    // background-size: 236px, 538px;
 
     padding-top: 171px;
     padding-bottom: 45px;
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/desktop/hero-icecream-desktop@2x.png),
-        url(/images/desktop/hero-circle-desktop@2x.png);
-    }
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url(/images/desktop/hero-icecream-desktop@2x.png),
+    //     url(/images/desktop/hero-circle-desktop@2x.png);
+    // }
   }
 }
 
@@ -217,7 +217,7 @@
   border-radius: 50%;
   cursor: pointer;
   background-color: $whiteColor;
-  
+
   @media screen and (min-width: $desktop) {
     width: 26px;
     height: 26px;
@@ -230,11 +230,43 @@
   fill: $accentColor;
   display: block;
   margin: auto;
-  
 
   @media screen and (min-width: $desktop) {
     width: 8px;
     height: 8px;
+  }
+}
+.hero__block {
+  position: relative;
+  z-index: 5;
+}
+.hero__ice-cream {
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+
+  @media screen and (min-width: $tablet) {
+    right: 247px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 450px;
+  }
+}
+
+.hero__circle {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
+
+  @media screen and (min-width: $tablet) {
+    right: 137px;
+    bottom: 46px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 267px;
+    bottom: 75px;
   }
 }
 
