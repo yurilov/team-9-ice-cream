@@ -34,6 +34,20 @@
     }
   }
 }
+
+.hero__ice-cream {
+  transform: translate(0, 80%);
+  @media screen and (min-width: 1280px) {
+    transform: translate(0, 70%);
+  }
+  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  &.element-show {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
 //--- Section Product
 
 .product__title,
