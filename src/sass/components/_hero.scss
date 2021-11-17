@@ -252,7 +252,7 @@
   }
 }
 
-.hero__item {
+.hero__list {
   display: none;
 
   @media screen and (min-width: $tablet) {
@@ -268,7 +268,7 @@
   }
 }
 
-.hero__item-object + .hero__item-object {
+.hero__item + .hero__item {
   margin-top: 13px;
 
   @media screen and (min-width: $desktop) {
@@ -276,7 +276,7 @@
   }
 }
 
-.hero__item-number-first {
+.hero__item-number {
   font-family: $tittleFont;
   font-weight: 400;
   font-size: 28px;
@@ -284,10 +284,12 @@
   text-align: right;
   letter-spacing: 0.04em;
   color: $accentColor;
+  position: relative;
+  z-index: 1;
 
   &::before {
     content: '';
-    display: inline-block;
+    display: block;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -295,6 +297,7 @@
     position: absolute;
     top: -2px;
     right: -10px;
+    z-index: -1;
   }
 
   @media screen and (min-width: $desktop) {
@@ -303,39 +306,9 @@
     &::before {
       width: 30px;
       height: 30px;
-    }
-  }
-}
 
-.hero__item-number-second {
-  font-family: $tittleFont;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.14;
-  text-align: right;
-  letter-spacing: 0.04em;
-  color: $accentColor;
-
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: $whiteColor;
-    position: absolute;
-    top: 50px;
-    right: -10px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    font-size: 46px;
-    line-height: 1.15;
-    &::before {
-      width: 30px;
-      height: 30px;
-      top: 80px;
-      right: -10px;
+      top: -7px;
+      right: -15px;
     }
   }
 }
