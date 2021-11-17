@@ -26,13 +26,19 @@
 .franchise-modal {
   @media screen and (max-width: 479px) {
     width: 100vw;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-size: 200px;
   }
 
   position: relative;
-  background-color: $mainBg;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  background-color: $secondaryBg;
+  background-image: url(/images/funny-cow@1x.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: bottom left;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
   padding: 40px;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,9 +48,9 @@
     height: 609px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 528px;
-    height: 581px;
+    height: 609px;
   }
 }
 
@@ -85,7 +91,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: $preTittleColor;
+  color: $menuBg;
   margin-bottom: 12px;
 }
 
@@ -99,7 +105,7 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $accentColor;
   cursor: pointer;
 }
 
@@ -114,19 +120,20 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  padding-left: 42px;
+  padding-left: 20px;
+  color: $accentColor;
   cursor: pointer;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 370px;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 1199px) {
+  //   width: 370px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    width: 448px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 448px;
+  // }
 
   &:focus {
     border: 1px solid $accentColor;
@@ -153,7 +160,11 @@
 
 .franchise-modal__comment {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 70px;
+  }
+  margin-bottom: 43px;
   min-height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -242,13 +253,15 @@
 
 .franchise-modal__button {
   display: block;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: none;
+  // border: 1px solid rgba(33, 33, 33, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: $accentColor;
   border-radius: 22px;
-  padding: 17px 35px;
+  padding: 14px 28px;
+  height: 44px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
 }
 
 .franchise-modal__button-text {
