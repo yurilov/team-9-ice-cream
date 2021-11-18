@@ -48,3 +48,20 @@
       refs.cardBack.classList.toggle('flipped');
   }
 })();
+
+// (() => {
+//   const refs = {
+//     rotateCardBtn: document.querySelector('[data-hero-rotate-front]'),
+//     unrotateCardBtn: document.querySelector('[data-hero-rotate-back]'),
+//     cardFront: document.querySelector('[data-hero-front]'),
+//     cardBack: document.querySelector('[data-hero-back]'),
+//   };
+
+//   refs.rotateCardBtn.addEventListener('click', toggleCard);
+//   refs.unrotateCardBtn.addEventListener('click', toggleCard);
+
+//   function toggleCard() {
+//       refs.cardFront.classList.toggle('flipped');
+//       refs.cardBack.classList.toggle('flipped');
+//   }
+// })();
